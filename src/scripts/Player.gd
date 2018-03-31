@@ -1,11 +1,8 @@
-extends KinematicBody
+extends RigidBody
 
 
 # Player camera position
 var camera = Vector2()
-
-# Player velocity
-var velocity = Vector3()
 
 
 func _ready():
@@ -38,34 +35,21 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_faster"):
 		speed = 5
 
-	var velocity_y = velocity.y - delta * 9.8
-
-	velocity.y = 0
-
 	var acceleration = 1
 
-	if is_on_floor():
-		acceleration = 5
-
-		if direction.length() == 0 || direction.dot(velocity) < 0:
-			acceleration = 10
-
+	if get_node("RayCast").is_colliding():
 		if Input.is_action_just_pressed("jump"):
-			velocity_y = 4
+			apply_impulse(translation, Vector3(0, 5, 0))
 
 			get_node("Jump").play()
 
 		if direction.length() > 0:
+			apply_impulse(translation, direction * speed * 1000 * delta)
+
 			if !get_node("Footstep").is_playing():
 				get_node("Footstep").play()
 		else:
 			get_node("Footstep").stop()
-
-	velocity = velocity.linear_interpolate(direction * speed, delta * acceleration)
-
-	velocity.y = velocity_y
-
-	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
 
 
 func _unhandled_input(event):
