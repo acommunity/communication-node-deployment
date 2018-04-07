@@ -2,12 +2,12 @@ extends RigidBody
 
 
 # Player camera position
-var camera = Vector2()
+var _camera = Vector2()
 
 
 func _ready():
-	camera.x = rad2deg(get_node("Head").get_rotation().y)
-	camera.y = rad2deg(get_node("Head/Eyes").get_rotation().x)
+	_camera.x = rad2deg(get_node("Head").get_rotation().y)
+	_camera.y = rad2deg(get_node("Head/Eyes").get_rotation().x)
 
 
 func _physics_process(delta):
@@ -58,12 +58,12 @@ func _physics_process(delta):
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
-		camera -= event.relative * 0.2
-		camera.x = fmod(camera.x, 360)
-		camera.y = clamp(camera.y, -85, 85)
+		_camera -= event.relative * 0.2
+		_camera.x = fmod(_camera.x, 360)
+		_camera.y = clamp(_camera.y, -85, 85)
 
-		get_node("Head").set_rotation(Vector3(0, deg2rad(camera.x), 0))
-		get_node("Head/Eyes").set_rotation(Vector3(deg2rad(camera.y), 0, 0))
+		get_node("Head").set_rotation(Vector3(0, deg2rad(_camera.x), 0))
+		get_node("Head/Eyes").set_rotation(Vector3(deg2rad(_camera.y), 0, 0))
 
 
 func _enter_tree():

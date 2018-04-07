@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://media/textures/grass_rock_01.png" type="Texture" id=1]
-[ext_resource path="res://media/models/power-supplier-t400/currentCage.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://media/models/power-supplier-t400/currentCage.obj" type="ArrayMesh" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -26,8 +25,7 @@ params_point_size = 1.0
 params_billboard_mode = 0
 params_grow = false
 params_use_alpha_scissor = false
-albedo_color = Color( 1, 1, 1, 1 )
-albedo_texture = ExtResource( 1 )
+albedo_color = Color( 0.105882, 0.301961, 0.0666667, 1 )
 metallic = 0.0
 metallic_specular = 0.5
 metallic_texture_channel = 0
@@ -54,7 +52,7 @@ uv2_triplanar = false
 uv2_triplanar_sharpness = 1.0
 proximity_fade_enable = false
 distance_fade_enable = false
-_sections_unfolded = [ "UV1" ]
+_sections_unfolded = [ "Albedo", "UV1" ]
 
 [sub_resource type="BoxShape" id=2]
 
@@ -82,7 +80,6 @@ extents = Vector3( 0.137694, 1.81754, 1.80876 )
 
 [node name="PowerSupplier" type="VehicleBody"]
 
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08254, 2.04203, -0.818488 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -126,7 +123,7 @@ lod_min_distance = 0.0
 lod_min_hysteresis = 0.0
 lod_max_distance = 0.0
 lod_max_hysteresis = 0.0
-mesh = ExtResource( 2 )
+mesh = ExtResource( 1 )
 skeleton = NodePath("..")
 material/0 = null
 material/1 = null

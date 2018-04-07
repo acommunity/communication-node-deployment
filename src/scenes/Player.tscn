@@ -13,7 +13,7 @@ height = 1.1
 
 radius = 0.29
 
-[node name="Player" type="RigidBody" index="0"]
+[node name="Player" type="RigidBody"]
 
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -125,6 +125,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Feet" type="RigidBody" parent="." index="5"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.55, 0 )
 input_ray_pickable = true
 input_capture_on_drag = false
