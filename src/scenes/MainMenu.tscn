@@ -158,6 +158,8 @@ align = 1
 
 [connection signal="pressed" from="Buttons/Settings" to="." method="_on_Settings_pressed"]
 
+[connection signal="pressed" from="Buttons/About" to="." method="_on_About_pressed"]
+
 [connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
 
 
