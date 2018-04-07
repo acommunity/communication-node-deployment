@@ -16,16 +16,16 @@ func _physics_process(delta):
 	var direction = Vector3()
 
 	if Input.is_action_pressed("move_forward"):
-		direction -= aim.z
-
-	if Input.is_action_pressed("move_backward"):
-		direction += aim.z
-
-	if Input.is_action_pressed("move_left"):
 		direction -= aim.x
 
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("move_backward"):
 		direction += aim.x
+
+	if Input.is_action_pressed("move_left"):
+		direction += aim.z
+
+	if Input.is_action_pressed("move_right"):
+		direction -= aim.z
 
 	direction.y = 0
 	direction = direction.normalized()
@@ -35,21 +35,22 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_faster"):
 		speed = 5
 
-	var acceleration = 1
+	get_node("Feet").set_angular_velocity(direction * speed * 2)
 
 	if get_node("RayCast").is_colliding():
 		if Input.is_action_just_pressed("jump"):
-			apply_impulse(translation, Vector3(0, 5, 0))
+			var feet = get_node("Feet")
+
+			apply_impulse(translation, Vector3(0, 5, 0) * mass)
+			feet.apply_impulse(feet.translation, Vector3(0, 5, 0) * feet.mass)
 
 			get_node("Jump").play()
 
 		if direction.length() > 0:
-			apply_impulse(translation, direction * speed * 1000 * delta)
-
-			if !get_node("Footstep").is_playing():
-				get_node("Footstep").play()
+			if !get_node("Move").is_playing():
+				get_node("Move").play()
 		else:
-			get_node("Footstep").stop()
+			get_node("Move").stop()
 
 
 func _unhandled_input(event):

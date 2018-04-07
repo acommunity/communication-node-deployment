@@ -31,4 +31,4 @@ move_faster=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_nam
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://environment.tres"
