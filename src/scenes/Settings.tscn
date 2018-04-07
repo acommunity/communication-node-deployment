@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/Settings.gd" type="Script" id=1]
 
-[node name="Scene" type="Control" index="0"]
+[node name="Scene" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -62,7 +62,6 @@ scroll_horizontal_enabled = true
 scroll_horizontal = 0
 scroll_vertical_enabled = true
 scroll_vertical = 0
-_sections_unfolded = [ "Anchor", "Margin" ]
 
 [node name="Buttons" type="VBoxContainer" parent="Scroll" index="0"]
 
