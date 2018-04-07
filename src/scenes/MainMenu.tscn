@@ -64,9 +64,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 500.0
+margin_top = 450.0
 margin_right = 1004.0
-margin_bottom = 520.0
+margin_bottom = 470.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -88,9 +88,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 530.0
+margin_top = 480.0
 margin_right = 1004.0
-margin_bottom = 550.0
+margin_bottom = 500.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -113,9 +113,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 560.0
+margin_top = 510.0
 margin_right = 1004.0
-margin_bottom = 580.0
+margin_bottom = 530.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -131,8 +131,34 @@ text = "Exit"
 flat = false
 align = 1
 
+[node name="FullScreen" type="CheckButton" parent="Buttons" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 540.0
+margin_right = 1004.0
+margin_bottom = 580.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Full Screen"
+flat = false
+align = 2
+
 [connection signal="pressed" from="Buttons/Start" to="." method="_on_Start_pressed"]
 
 [connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
+
+[connection signal="toggled" from="Buttons/FullScreen" to="." method="_on_FullScreen_toggled"]
 
 
