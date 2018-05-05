@@ -3,7 +3,7 @@
 [ext_resource path="res://scripts/BackgroundMusicPlayer.gd" type="Script" id=1]
 [ext_resource path="res://media/sounds/Theme.wav" type="AudioStream" id=2]
 
-[node name="BGSound" type="Node"]
+[node name="BGSound" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
