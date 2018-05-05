@@ -244,4 +244,3 @@ _sections_unfolded = [ "Anchor", "Size Flags" ]
 
 [connection signal="pressed" from="GoBack" to="." method="_on_MainMenu_pressed"]
 
-
