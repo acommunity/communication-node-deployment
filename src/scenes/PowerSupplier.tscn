@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://media/models/power-supplier-t400/currentCage.obj" type="ArrayMesh" id=1]
 
@@ -69,14 +69,6 @@ extents = Vector3( 0.886494, 0.158415, 0.630416 )
 [sub_resource type="BoxShape" id=5]
 
 extents = Vector3( 1.24904, 0.135858, 0.133583 )
-
-[sub_resource type="BoxShape" id=6]
-
-extents = Vector3( 0.137694, 1.81754, 1.80876 )
-
-[sub_resource type="BoxShape" id=7]
-
-extents = Vector3( 0.137694, 1.81754, 1.80876 )
 
 [node name="PowerSupplier" type="VehicleBody"]
 
@@ -568,21 +560,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.841313, 3.91954 )
 shape = SubResource( 5 )
 disabled = false
 
-[node name="CollisionShape2" type="CollisionShape" parent="." index="5"]
-
-transform = Transform( 0.858503, -0.512809, 0, 0.512809, 0.858503, 0, 0, 0, 1, -1.21893, 3.54593, 0.714826 )
-shape = SubResource( 6 )
-disabled = false
-_sections_unfolded = [ "Transform" ]
-
-[node name="CollisionShape3" type="CollisionShape" parent="." index="6"]
-
-transform = Transform( 0.858503, -0.512809, 0, 0.512809, 0.858503, 0, 0, 0, 1, -1.21893, 3.54593, -3.32261 )
-shape = SubResource( 7 )
-disabled = false
-_sections_unfolded = [ "Transform" ]
-
-[node name="LeftFrontWheel" type="VehicleWheel" parent="." index="7"]
+[node name="LeftFrontWheel" type="VehicleWheel" parent="." index="5"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14789, -1.29759, 2.523 )
 use_as_traction = true
@@ -598,7 +576,7 @@ damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Wheel" ]
 
-[node name="RightFrontWheel" type="VehicleWheel" parent="." index="8"]
+[node name="RightFrontWheel" type="VehicleWheel" parent="." index="6"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14643, -1.29759, 2.523 )
 use_as_traction = true
@@ -614,7 +592,7 @@ damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Transform", "Wheel" ]
 
-[node name="LeftMiddleWheel" type="VehicleWheel" parent="." index="9"]
+[node name="LeftMiddleWheel" type="VehicleWheel" parent="." index="7"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14789, -1.29759, -0.895903 )
 use_as_traction = true
@@ -630,7 +608,7 @@ damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Transform", "Wheel" ]
 
-[node name="RightMiddleWheel" type="VehicleWheel" parent="." index="10"]
+[node name="RightMiddleWheel" type="VehicleWheel" parent="." index="8"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14643, -1.29759, -0.896156 )
 use_as_traction = true
@@ -646,7 +624,7 @@ damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Transform", "Wheel" ]
 
-[node name="LeftBackWheel" type="VehicleWheel" parent="." index="11"]
+[node name="LeftBackWheel" type="VehicleWheel" parent="." index="9"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14789, -1.29759, -2.29175 )
 use_as_traction = true
@@ -662,7 +640,7 @@ damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Transform", "Wheel" ]
 
-[node name="RightBackWheel" type="VehicleWheel" parent="." index="12"]
+[node name="RightBackWheel" type="VehicleWheel" parent="." index="10"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14643, -1.29759, -2.28983 )
 use_as_traction = true

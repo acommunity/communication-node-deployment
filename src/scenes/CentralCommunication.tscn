@@ -70,7 +70,7 @@ extents = Vector3( 0.886494, 0.158415, 0.630416 )
 
 extents = Vector3( 1.24904, 0.135858, 0.133583 )
 
-[sub_resource type="BoxShape" id=7]
+[sub_resource type="BoxShape" id=6]
 
 extents = Vector3( 0.137694, 1.51806, 1.5036 )
 
@@ -1411,14 +1411,14 @@ disabled = false
 [node name="CollisionShape3" type="CollisionShape" parent="." index="5"]
 
 transform = Transform( 0.87462, 0.48481, 0, -0.48481, 0.87462, 0, 0, 0, 1, 0.854453, 3.18344, -2.93121 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape4" type="CollisionShape" parent="." index="6"]
 
 transform = Transform( 0.87462, 0.48481, 0, -0.48481, 0.87462, 0, 0, 0, 1, 0.854453, 3.18344, 0.818664 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
@@ -1517,5 +1517,74 @@ suspension_max_force = 30000.0
 damping_compression = 0.3
 damping_relaxation = 0.5
 _sections_unfolded = [ "Damping", "Suspension", "Transform", "Wheel" ]
+
+[node name="SpotLight" type="SpotLight" parent="." index="13"]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.010952, 1.53188, -0.0271499 )
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 0.8
+light_indirect_energy = 0.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+spot_range = 2.7
+spot_attenuation = 1.0
+spot_angle = 60.0
+spot_angle_attenuation = 1.0
+_sections_unfolded = [ "Light", "Shadow", "Spot" ]
+
+[node name="SpotLight2" type="SpotLight" parent="." index="14"]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.010952, 1.53188, -1.56058 )
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 0.8
+light_indirect_energy = 0.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+spot_range = 2.7
+spot_attenuation = 1.0
+spot_angle = 60.0
+spot_angle_attenuation = 1.0
+_sections_unfolded = [ "Light", "Shadow", "Spot" ]
+
+[node name="SpotLight3" type="SpotLight" parent="." index="15"]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.010952, 1.53188, -2.76401 )
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 0.8
+light_indirect_energy = 0.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+spot_range = 2.7
+spot_attenuation = 1.0
+spot_angle = 60.0
+spot_angle_attenuation = 1.0
+_sections_unfolded = [ "Light", "Shadow", "Spot" ]
 
 

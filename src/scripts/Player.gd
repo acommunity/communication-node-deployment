@@ -55,6 +55,9 @@ func _physics_process(delta):
 		else:
 			get_node("Move").stop()
 
+	if get_node("Head/Eyes/RayCast").is_colliding():
+		pass
+
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
