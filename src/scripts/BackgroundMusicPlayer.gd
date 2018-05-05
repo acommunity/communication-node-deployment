@@ -1,19 +1,18 @@
 extends Node
 """
-You can use this construction in start godot script
-		onready var bgsound = get_node("BGSound")
-and functions may look like 
-		bgsound.play()
-		
-get_node("BGSound").play(from_position) - plays the audio from the given position ‘from_position’, in seconds
+For playing music in scene paste 'BackgroundMusicPlayer.tscn' and this string in godot script in 'func _ready():'
+
+	get_node("BGSound").LoadSound(load(path))
+
+get_node("BGSound").play() - plays the audio from the given position ‘from_position’, in seconds
 get_node("BGSound").LoadSound(res) - give music resourse for player and play it.
 	res - resourse object, can get with 'load(path)' function. Example: load("res://media/sounds/music.wav")
-get_node("BGSound").pause() - stop playing music and return playbackPosition.
+get_node("BGSound").pause() - stop playing music and set 'from_position'.
 	next play will be from this position
+press Q for play
+press E for pause
 """
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+
 var BGAudioPlayer
 var from_position = 0
 
@@ -21,13 +20,11 @@ func _ready():
 	BGAudioPlayer = get_node("AudioPlayer")
 
 func _process(delta):
-	# Called every frame. Delta is time since last frame.
-	# Update game logic here.
 	if Input.is_key_pressed(KEY_Q):
 		print('Q play')
 		play()
-	if Input.is_key_pressed(KEY_W):
-		print('W pause')
+	if Input.is_key_pressed(KEY_E):
+		print('E pause')
 		pause()
 
 func play():
