@@ -50,10 +50,11 @@ func _physics_process(delta):
 			get_node("Jump").play()
 
 		if direction.length() > 0:
-			if !get_node("Move").is_playing():
-				get_node("Move").play()
+			_start_moving_sound(speed)
 		else:
-			get_node("Move").stop()
+			_stop_moving_sound()
+	else:
+		_stop_moving_sound()
 
 	if get_node("Head/Eyes/RayCast").is_colliding():
 		pass
@@ -75,3 +76,22 @@ func _enter_tree():
 
 func _exit_tree():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+
+func _on_Timer_timeout():
+	print("Hello, World!")
+	get_node("Move").play()
+
+func _start_moving_sound(speed):
+	var timer = get_node("Move/Timer")
+
+	timer.wait_time = 1.5 / speed
+
+	if timer.is_stopped():	
+		timer.start()
+
+func _stop_moving_sound():
+	var timer = get_node("Move/Timer")
+
+	if !timer.is_stopped():
+		timer.stop()
