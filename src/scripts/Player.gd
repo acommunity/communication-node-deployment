@@ -79,8 +79,8 @@ func _exit_tree():
 
 
 func _on_Timer_timeout():
-	print("Hello, World!")
 	get_node("Move").play()
+
 
 func _start_moving_sound(speed):
 	var timer = get_node("Move/Timer")
@@ -89,6 +89,7 @@ func _start_moving_sound(speed):
 
 	if timer.is_stopped():	
 		timer.start()
+
 
 func _stop_moving_sound():
 	var timer = get_node("Move/Timer")
