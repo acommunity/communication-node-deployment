@@ -3,7 +3,7 @@
 [ext_resource path="res://scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://media/movies/npc_dota_hero_nevermore.webm" type="VideoStream" id=2]
 
-[node name="Scene" type="Control"]
+[node name="Scene" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -64,9 +64,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 470.0
+margin_top = 450.0
 margin_right = 1004.0
-margin_bottom = 490.0
+margin_bottom = 475.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -81,6 +81,7 @@ group = null
 text = "Start"
 flat = false
 align = 1
+_sections_unfolded = [ "Margin" ]
 
 [node name="About" type="Button" parent="Buttons" index="1"]
 
@@ -88,9 +89,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 500.0
+margin_top = 485.0
 margin_right = 1004.0
-margin_bottom = 520.0
+margin_bottom = 510.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -112,9 +113,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 530.0
+margin_top = 520.0
 margin_right = 1004.0
-margin_bottom = 550.0
+margin_bottom = 545.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -136,7 +137,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 560.0
+margin_top = 555.0
 margin_right = 1004.0
 margin_bottom = 580.0
 rect_pivot_offset = Vector2( 0, 0 )

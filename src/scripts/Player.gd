@@ -1,8 +1,14 @@
 extends RigidBody
 
 
+signal eyes_enter(object)
+signal eyes_leave(object)
+
+
 # Player camera position
 var _camera = Vector2()
+
+var _camera_collider = null
 
 
 func _ready():
@@ -57,7 +63,17 @@ func _physics_process(delta):
 		_stop_moving_sound()
 
 	if get_node("Head/Eyes/RayCast").is_colliding():
-		pass
+		var collider = get_node("Head/Eyes/RayCast").get_collider()
+
+		if collider != _camera_collider:
+			emit_signal("eyes_enter", collider)
+
+			_camera_collider = collider	
+	else:
+		if _camera_collider != null:
+			emit_signal("eyes_leave", _camera_collider)
+
+			_camera_collider = null
 
 
 func _unhandled_input(event):

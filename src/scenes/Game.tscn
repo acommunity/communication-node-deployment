@@ -47,20 +47,85 @@ directional_shadow_max_distance = 200.0
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01208, 0.0738419 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CentralCommunication" parent="." index="2" instance=ExtResource( 3 )]
 
 transform = Transform( 0.986372, 0, -0.164528, 0, 1, 0, 0.164528, 0, 0.986372, 3.08198, 2.04203, -0.818488 )
 
+[node name="Title" type="Label" parent="CentralCommunication" index="16"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Р-423"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="PowerSupplier" parent="." index="3" instance=ExtResource( 4 )]
+
+_sections_unfolded = [ "Collision", "Motion", "Transform" ]
+
+[node name="Title" type="Label" parent="PowerSupplier" index="11"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Электропитающая"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="Moss" parent="." index="4" instance=ExtResource( 5 )]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05677, 1.89932, -0.806662 )
+_sections_unfolded = [ "Collision", "Motion", "Transform" ]
+
+[node name="Title" type="Label" parent="Moss" index="11"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "13-Д3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="Terrain" type="StaticBody" parent="." index="5"]
 
+editor/display_folded = true
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -126,6 +191,7 @@ _sections_unfolded = [ "Transform", "material" ]
 
 [node name="Interface" type="Control" parent="." index="6"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -188,21 +254,24 @@ texture = ExtResource( 7 )
 anchor_left = 0.3
 anchor_top = 0.5
 anchor_right = 0.7
-anchor_bottom = 0.5
+anchor_bottom = 0.6
 margin_top = 10.0
-margin_bottom = 50.0
+margin_bottom = -9.99997
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Hint"
 align = 1
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+
+[connection signal="eyes_enter" from="Player" to="." method="_on_Player_eyes_enter"]
+
+[connection signal="eyes_leave" from="Player" to="." method="_on_Player_eyes_leave"]
 
 
