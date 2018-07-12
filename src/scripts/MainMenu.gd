@@ -9,15 +9,15 @@ func _process(delta):
 
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://scenes/Game.tscn")
+	get_tree().change_scene("res://scenes/game/Game.tscn")
 
 
 func _on_Settings_pressed():
-	get_tree().change_scene("res://scenes/Settings.tscn")
+	get_tree().change_scene("res://scenes/menu/Settings.tscn")
 
 
 func _on_About_pressed():
-	get_tree().change_scene("res://scenes/About.tscn")
+	get_tree().change_scene("res://scenes/menu/About.tscn")
 
 
 func _on_Exit_pressed():

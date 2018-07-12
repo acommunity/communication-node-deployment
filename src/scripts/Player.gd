@@ -36,10 +36,10 @@ func _physics_process(delta):
 	direction.y = 0
 	direction = direction.normalized()
 
-	var speed = 3
+	var speed = 2
 
 	if Input.is_action_pressed("move_faster"):
-		speed = 6
+		speed = 4
 
 	get_node("Feet").axis_lock_angular_x = direction.x == 0
 	get_node("Feet").axis_lock_angular_z = direction.z == 0
@@ -47,6 +47,9 @@ func _physics_process(delta):
 	get_node("Feet").set_angular_velocity(direction * speed * PI)
 
 	if get_node("RayCast").is_colliding():
+		get_node("Feet").axis_lock_linear_x = direction.x == 0
+		get_node("Feet").axis_lock_linear_z = direction.z == 0
+
 		if Input.is_action_just_pressed("jump"):
 			var feet = get_node("Feet")
 
