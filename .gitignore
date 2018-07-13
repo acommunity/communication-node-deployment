@@ -2,3 +2,4 @@
 .fscache
 *.import
 *~
+*.DS_Store
