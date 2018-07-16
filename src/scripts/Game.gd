@@ -10,8 +10,8 @@ func _unhandled_key_input(event):
 func _on_Player_eyes_enter(object):
 	var text = ""
 
-	if object.has_node("Title"):
-		text = object.get_node("Title").text
+	if object.has_node("Hint"):
+		text = object.get_node("Hint").text
 
 	get_node("Interface/Hint").text = text
 
