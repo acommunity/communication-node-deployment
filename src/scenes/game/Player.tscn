@@ -13,7 +13,7 @@ radius = 0.29
 radius = 0.3
 height = 1.1
 
-[node name="Player" type="RigidBody" index="0"]
+[node name="Player" type="RigidBody"]
 
 input_ray_pickable = true
 input_capture_on_drag = false
