@@ -21,7 +21,7 @@ func _player_eyes_action():
 
 
 func set_state(value):
-	if $AnimationPlayer == null || value == state:
+	if !get_node("AnimationPlayer") || value == state:
 		return
 
 	if value == OPENED:
