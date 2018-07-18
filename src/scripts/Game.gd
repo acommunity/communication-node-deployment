@@ -46,6 +46,6 @@ func _on_Player_eyes_action(object):
 
 
 func set_stage(value):
-	get_node("Interface/StageRect/Stage").text = String(value + 1)
+	get_node("Interface/StageTitle/Stage").text = String(value + 1)
 
 	_stage = value
