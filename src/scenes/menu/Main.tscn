@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://media/movies/npc_dota_hero_nevermore.webm" type="VideoStream" id=2]
+[ext_resource path="res://media/textures/vf_icon.png" type="Texture" id=3]
+[ext_resource path="res://media/fonts/arial.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 22
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Settings" ]
 
 [node name="Scene" type="Control"]
 
@@ -38,11 +48,73 @@ paused = false
 expand = true
 buffering_msec = 500
 bus = "Master"
+_sections_unfolded = [ "Anchor" ]
 
-[node name="Buttons" type="VBoxContainer" parent="." index="1"]
+[node name="ColorRect2" type="ColorRect" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
+anchor_right = 0.3
+anchor_bottom = 1.0
+margin_right = -0.199982
+rect_min_size = Vector2( 320, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0.501961 )
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.6
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="ColorRect2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.6
+anchor_right = 1.0
+anchor_bottom = 0.6
+margin_top = 10.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "Тропосферная станция
+Р-423"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Margin", "custom_constants", "custom_fonts" ]
+
+[node name="Buttons" type="VBoxContainer" parent="ColorRect2" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.6
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 10.0
@@ -57,16 +129,18 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 10
 alignment = 2
+_sections_unfolded = [ "Anchor", "Margin", "custom_constants" ]
 
-[node name="Start" type="Button" parent="Buttons" index="0"]
+[node name="Start" type="Button" parent="ColorRect2/Buttons" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 450.0
-margin_right = 1004.0
-margin_bottom = 475.0
+margin_top = 62.0
+margin_right = 300.0
+margin_bottom = 94.0
+rect_min_size = Vector2( 0, 32 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -78,20 +152,21 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Start"
+text = "Начать!"
 flat = false
 align = 1
-_sections_unfolded = [ "Margin" ]
+_sections_unfolded = [ "Rect" ]
 
-[node name="About" type="Button" parent="Buttons" index="1"]
+[node name="Settings" type="Button" parent="ColorRect2/Buttons" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 485.0
-margin_right = 1004.0
-margin_bottom = 510.0
+margin_top = 104.0
+margin_right = 300.0
+margin_bottom = 136.0
+rect_min_size = Vector2( 0, 32 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -103,19 +178,21 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "About"
+text = "Настройки"
 flat = false
 align = 1
+_sections_unfolded = [ "Rect" ]
 
-[node name="Settings" type="Button" parent="Buttons" index="2"]
+[node name="About" type="Button" parent="ColorRect2/Buttons" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 520.0
-margin_right = 1004.0
-margin_bottom = 545.0
+margin_top = 146.0
+margin_right = 300.0
+margin_bottom = 178.0
+rect_min_size = Vector2( 0, 32 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -127,19 +204,21 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Settings"
+text = "О программе"
 flat = false
 align = 1
+_sections_unfolded = [ "Rect" ]
 
-[node name="Exit" type="Button" parent="Buttons" index="3"]
+[node name="Exit" type="Button" parent="ColorRect2/Buttons" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 555.0
-margin_right = 1004.0
-margin_bottom = 580.0
+margin_top = 188.0
+margin_right = 300.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 0, 32 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -151,16 +230,17 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Exit"
+text = "Выйти"
 flat = false
 align = 1
+_sections_unfolded = [ "Rect" ]
 
-[connection signal="pressed" from="Buttons/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="ColorRect2/Buttons/Start" to="." method="_on_Start_pressed"]
 
-[connection signal="pressed" from="Buttons/About" to="." method="_on_About_pressed"]
+[connection signal="pressed" from="ColorRect2/Buttons/Settings" to="." method="_on_Settings_pressed"]
 
-[connection signal="pressed" from="Buttons/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="ColorRect2/Buttons/About" to="." method="_on_About_pressed"]
 
-[connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="ColorRect2/Buttons/Exit" to="." method="_on_Exit_pressed"]
 
 

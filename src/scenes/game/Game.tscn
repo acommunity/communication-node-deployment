@@ -12,6 +12,8 @@
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+min_stage = 0
+max_stage = 9
 
 [node name="DirectionalLight" type="DirectionalLight" parent="." index="0"]
 
