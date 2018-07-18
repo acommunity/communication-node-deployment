@@ -12,7 +12,7 @@
 
 [sub_resource type="BoxShape" id=21]
 
-extents = Vector3( 0.553225, 0.553225, 0.200826 )
+extents = Vector3( 0.553225, 0.553225, 0.18776 )
 
 [sub_resource type="BoxShape" id=2]
 
@@ -280,7 +280,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 90.0, 0.0 ]
+"values": [ 110.0, 0.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("HingeJoint:angular_limit/lower")
@@ -292,7 +292,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 90.0, 0.0 ]
+"values": [ 110.0, 0.0 ]
 }
 
 [sub_resource type="Animation" id=20]
@@ -311,7 +311,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 90.0 ]
+"values": [ 0.0, 110.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("HingeJoint:angular_limit/lower")
@@ -323,7 +323,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 90.0 ]
+"values": [ 0.0, 110.0 ]
 }
 
 [sub_resource type="BoxShape" id=11]
@@ -556,6 +556,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.747909, 0.641363, -3.31512 
 
 [node name="BackWheel" type="RigidBody" parent="." index="3"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73638, 1.03752, -3.50259 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -626,7 +627,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="BackWheel" index="2"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0227225, -0.0487361 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0227225, -0.0472708 )
 shape = SubResource( 21 )
 disabled = false
 
@@ -649,7 +650,8 @@ blend_times = [  ]
 
 [node name="LeftBackDoor" type="RigidBody" parent="." index="4"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36139, 1.2283, -3.35442 )
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36139, 1.2283, -3.33824 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
