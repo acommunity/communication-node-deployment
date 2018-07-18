@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://media/models/moss/core.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scripts/Door.gd" type="Script" id=2]
@@ -10,9 +10,13 @@
 [ext_resource path="res://media/models/moss/innerdoor.obj" type="ArrayMesh" id=8]
 [ext_resource path="res://media/models/moss/wheel.obj" type="ArrayMesh" id=9]
 
+[sub_resource type="BoxShape" id=21]
+
+extents = Vector3( 0.553225, 0.553225, 0.200826 )
+
 [sub_resource type="BoxShape" id=2]
 
-extents = Vector3( 0.364457, 0.459755, 0.321805 )
+extents = Vector3( 0.364457, 0.459755, 0.274245 )
 
 [sub_resource type="Animation" id=3]
 
@@ -622,13 +626,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="BackWheel" index="2"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0227225, -0.027226 )
-shape = SubResource( 2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0227225, -0.0487361 )
+shape = SubResource( 21 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="BackWheel" index="3"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00839138, -0.298111, -0.147483 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00839138, -0.298111, -0.160308 )
 shape = SubResource( 2 )
 disabled = false
 
@@ -651,7 +655,7 @@ input_capture_on_drag = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 1.0
+mass = 20.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 1.0
@@ -726,7 +730,7 @@ input_capture_on_drag = false
 collision_layer = 3
 collision_mask = 1
 mode = 0
-mass = 10.0
+mass = 20.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 1.0
@@ -837,7 +841,7 @@ input_capture_on_drag = false
 collision_layer = 3
 collision_mask = 1
 mode = 0
-mass = 10.0
+mass = 20.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 1.0
