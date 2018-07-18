@@ -4,10 +4,6 @@ extends RigidBody
 enum State { CLOSED, OPENED }
 
 
-export(NodePath) var tree_player
-
-export(String) var transition_node
-
 export(State) var state = CLOSED
 
 
