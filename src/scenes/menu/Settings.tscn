@@ -37,7 +37,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Go Back"
+text = "Вернуться"
 flat = false
 align = 1
 _sections_unfolded = [ "Anchor", "Margin" ]
@@ -100,7 +100,7 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Enable Full Screen"
+text = "Полноэкранный режим"
 flat = false
 align = 0
 
