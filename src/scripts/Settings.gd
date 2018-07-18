@@ -10,4 +10,4 @@ func _on_FullScreen_toggled(button_pressed):
 
 
 func _on_GoBack_pressed():
-	get_tree().change_scene("res://scenes/MainMenu.tscn")
+	get_tree().change_scene("res://scenes/menu/Main.tscn")
