@@ -15,28 +15,6 @@
 [ext_resource path="res://scenes/Terrain/resources/textures/grass/wheat.png" type="Texture" id=13]
 [ext_resource path="res://scenes/Terrain/resources/skybox/morning.hdr" type="Texture" id=14]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [sub_resource type="Resource" id=1]
 
 script = ExtResource( 3 )
