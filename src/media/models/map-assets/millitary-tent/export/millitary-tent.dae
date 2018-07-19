@@ -5,19 +5,19 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-07-18T15:45:07Z</created>
-	<modified>2018-07-18T15:45:07Z</modified>
+	<created>2018-07-19T11:34:28Z</created>
+	<modified>2018-07-19T11:34:28Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-	<image id="id-image-6" name="Tent_Defuse.tga.002">
+	<image id="id-image-6" name="Tent_Defuse.tga.001">
 		<init_from>images\Tent_Defuse.tga</init_from>
 	</image>
-	<image id="id-image-9" name="Tent_Normal.tga.002">
+	<image id="id-image-9" name="Tent_Normal.tga.001">
 		<init_from>images\Tent_Normal.tga</init_from>
 	</image>
-	<image id="id-image-12" name="Tent_Spec.tga.002">
+	<image id="id-image-12" name="Tent_Spec.tga.001">
 		<init_from>images\Tent_Spec.tga</init_from>
 	</image>
 </library_images>
@@ -2582,8 +2582,6 @@
 		</node>
 	</visual_scene>
 </library_visual_scenes>
-<library_animations>
-</library_animations>
 <scene>
 	<instance_visual_scene url="#id-scene-1" />
 </scene>
