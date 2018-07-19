@@ -5,17 +5,17 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-07-19T09:26:22Z</created>
-	<modified>2018-07-19T09:26:22Z</modified>
+	<created>2018-07-19T11:27:41Z</created>
+	<modified>2018-07-19T11:27:41Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-	<image id="id-image-5" name="DiffuceBanco.jpg.001">
-		<init_from>images/DiffuceBanco.jpg</init_from>
+	<image id="id-image-5" name="DiffuceBanco.jpg">
+		<init_from>images\DiffuceBanco.jpg</init_from>
 	</image>
-	<image id="id-image-8" name="Banco-Normal.jpg">
-		<init_from>images/Banco-Normal.jpg</init_from>
+	<image id="id-image-8" name="Banco-Normal.jpg.001">
+		<init_from>images\Banco-Normal.jpg</init_from>
 	</image>
 </library_images>
 <library_effects>
@@ -1285,8 +1285,6 @@
 		</node>
 	</visual_scene>
 </library_visual_scenes>
-<library_animations>
-</library_animations>
 <scene>
 	<instance_visual_scene url="#id-scene-1" />
 </scene>

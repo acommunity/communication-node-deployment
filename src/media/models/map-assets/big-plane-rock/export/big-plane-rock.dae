@@ -5,14 +5,14 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-07-18T16:48:58Z</created>
-	<modified>2018-07-18T16:48:58Z</modified>
+	<created>2018-07-19T11:29:17Z</created>
+	<modified>2018-07-19T11:29:17Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
 	<image id="id-image-4" name="Rock-Texture-Surface.jpg">
-		<init_from>../Rock-Texture-Surface.jpg</init_from>
+		<init_from>images\Rock-Texture-Surface.jpg</init_from>
 	</image>
 </library_images>
 <library_effects>
