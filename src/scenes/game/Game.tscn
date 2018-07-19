@@ -53,6 +53,7 @@ transform = Transform( 0.986372, 0, -0.164528, 0, 1, 0, 0.164528, 0, 0.986372, 3
 
 [node name="PowerSupplier" parent="." index="3" instance=ExtResource( 4 )]
 
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0194, 1.53999, 0 )
 _sections_unfolded = [ "Collision", "Motion", "Transform" ]
 
 [node name="Moss" parent="." index="4" instance=ExtResource( 5 )]
