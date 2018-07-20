@@ -198,7 +198,7 @@ _detail_objects_data = [ {
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="3"]
 
-transform = Transform( -0.000158354, 0, 1, 0, 1, 0, -1, 0, -0.000158354, 4.45521, 2.12389, 249.07 )
+transform = Transform( -0.000158354, 0, 1, 0, 1, 0, -1, 0, -0.000158354, 4.45521, 2.12389, 239.566 )
 layers = 1
 material_override = null
 cast_shadow = 1
