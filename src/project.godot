@@ -14,6 +14,11 @@ config/name="Station P-423"
 run/main_scene="res://scenes/menu/Main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+
 [gui]
 
 theme/custom_font="res://media/fonts/arial.tres"
