@@ -19,6 +19,10 @@ config/icon="res://icon.png"
 window/size/width=1280
 window/size/height=720
 
+[editor_plugins]
+
+enabled=PoolStringArray( "zylann.hterrain" )
+
 [gui]
 
 theme/custom_font="res://media/fonts/arial.tres"
@@ -56,7 +60,7 @@ translation_remaps={
 
 [physics]
 
-3d/physics_engine="GodotPhysics"
+3d/physics_engine="Bullet"
 
 [rendering]
 
