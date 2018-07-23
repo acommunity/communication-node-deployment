@@ -13,7 +13,7 @@ use_filter = false
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Settings" ]
 
-[node name="Scene" type="Control"]
+[node name="Scene" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
