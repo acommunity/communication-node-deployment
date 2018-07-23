@@ -46,8 +46,6 @@ func _on_Player_eyes_action(object):
 
 
 func set_stage(value):
-	get_node("Interface/StageTitle/Stage").text = String(value + 1)
-
 	if _stage_is_playing():
 		return
 
@@ -56,6 +54,8 @@ func set_stage(value):
 
 	while _stage > value:
 		_set_prev_stage()
+
+	get_node("Interface/StageTitle/Stage").text = String(value + 1)
 
 
 func _stage_is_playing():
