@@ -1,17 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scripts/About.gd" type="Script" id=1]
-[ext_resource path="res://media/fonts/arial.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://media/fonts/arial.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 25
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 2 )
+font_data = ExtResource( 1 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Scene" type="Control"]
+[node name="Scene" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -23,10 +22,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 1 )
 _sections_unfolded = [ "Anchor", "Margin" ]
 
-[node name="GoBack" type="Button" parent="." index="0"]
+[node name="Close" type="Button" parent="." index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -47,7 +45,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Вернуться"
+text = "Закрыть"
 flat = false
 align = 1
 _sections_unfolded = [ "Anchor", "Margin" ]
@@ -99,7 +97,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1004.0
-margin_bottom = 86.0
+margin_bottom = 82.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -119,9 +117,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 90.0
+margin_top = 86.0
 margin_right = 1004.0
-margin_bottom = 176.0
+margin_bottom = 168.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -130,7 +128,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Криницин Антон
 Удовин Иван
-"
+Рожков Дмитрий"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
@@ -143,9 +141,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 180.0
+margin_top = 172.0
 margin_right = 1004.0
-margin_bottom = 266.0
+margin_bottom = 254.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -166,17 +164,19 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 270.0
+margin_top = 258.0
 margin_right = 1004.0
-margin_bottom = 356.0
+margin_bottom = 365.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Рогачевский Мартин
+text = "Криницин Антон
+Рогачевский Мартин
 Алейников Владислав
+Филиппович Вадим
 "
 align = 1
 percent_visible = 1.0
@@ -190,9 +190,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 360.0
+margin_top = 369.0
 margin_right = 1004.0
-margin_bottom = 446.0
+margin_bottom = 451.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -213,7 +213,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 450.0
+margin_top = 455.0
 margin_right = 1004.0
 margin_bottom = 540.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -223,13 +223,13 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Удовин Иван
-Чмуров Максим"
+Чмуров Максим
+Филиппович Вадим
+Рожков Дмитрий"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Size Flags" ]
-
-[connection signal="pressed" from="GoBack" to="." method="_on_MainMenu_pressed"]
 
 

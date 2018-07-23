@@ -7,7 +7,3 @@ func _enter_tree():
 
 func _on_FullScreen_toggled(button_pressed):
 	OS.set_window_fullscreen(button_pressed)
-
-
-func _on_GoBack_pressed():
-	get_tree().change_scene("res://scenes/menu/Main.tscn")

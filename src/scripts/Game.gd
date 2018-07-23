@@ -6,7 +6,7 @@ export(int) var min_stage = 0
 export(int) var max_stage = 9
 
 
-var _stage
+var _stage = 0
 
 
 func _ready():
@@ -46,6 +46,57 @@ func _on_Player_eyes_action(object):
 
 
 func set_stage(value):
+	if _stage_is_playing():
+		return
+
+	while _stage < value:
+		_set_next_stage()
+
+	while _stage > value:
+		_set_prev_stage()
+
 	get_node("Interface/StageTitle/Stage").text = String(value + 1)
 
-	_stage = value
+
+func _stage_is_playing():
+	for child in get_node("Cars").get_children():
+		if !child.has_node("AnimationPlayer"):
+			continue
+
+		var player = child.get_node("AnimationPlayer")
+
+		if player.is_playing():
+			return true
+
+	return false
+
+
+func _set_next_stage():
+	_stage += 1
+
+	for child in get_node("Cars").get_children():
+		if !child.has_node("AnimationPlayer"):
+			continue
+
+		var player = child.get_node("AnimationPlayer")
+
+		var str_stage = String(_stage)
+
+		if player.has_animation(str_stage):
+			player.play(str_stage)
+
+
+
+func _set_prev_stage():
+	for child in get_node("Cars").get_children():
+		if !child.has_node("AnimationPlayer"):
+			continue
+
+		var player = child.get_node("AnimationPlayer")
+
+		var str_stage = String(_stage)
+
+		if player.has_animation(str_stage):
+			player.play_backwards(str_stage)
+
+	_stage -= 1
