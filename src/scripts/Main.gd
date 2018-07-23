@@ -29,17 +29,20 @@ func _set_menu_scene(resource):
 
 	var scene = scene_resource.instance()
 
-	for child in get_node("MenuRect").get_children():
-		child.queue_free()
-
 	scene.get_node("Close").connect("pressed", self, "_on_Close_pressed")
+
+	_clear_menu_rect()
 
 	get_node("MenuRect").add_child(scene)
 	get_node("MenuRect").set_visible(true)
 
 
 func _on_Close_pressed():
+	get_node("MenuRect").set_visible(false)
+
+	_clear_menu_rect()
+
+
+func _clear_menu_rect():
 	for child in get_node("MenuRect").get_children():
 		child.queue_free()
-
-	get_node("MenuRect").set_visible(false)
