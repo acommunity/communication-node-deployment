@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/game/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/cars/CentralCommunication.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/cars/PowerSupplier.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/cars/Moss.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/terrain/Terrain.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/cars/R409.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/terrain/Terrain.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=8]
 
 [node name="Scene" type="Spatial" index="0"]
 
@@ -51,20 +52,24 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CentralCommunication" parent="Cars" index="0" instance=ExtResource( 3 )]
 
-transform = Transform( 0.986372, 0, -0.164528, 0, 1, 0, 0.164528, 0, 0.986372, 13.353, 4.46409, 21.0449 )
+transform = Transform( 0.999963, 0, 0.00856598, 0, 1, 0, -0.00856598, 0, 0.999963, 256.342, 8.67249, 267.554 )
 
 [node name="PowerSupplier" parent="Cars" index="1" instance=ExtResource( 4 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2904, 3.96205, 21.8634 )
+transform = Transform( -0.411148, 0, 0.911569, 0, 1, 0, -0.911569, 0, -0.411148, 243.408, 4.6857, 225.267 )
 _sections_unfolded = [ "Collision", "Motion", "Transform" ]
 
 [node name="Moss" parent="Cars" index="2" instance=ExtResource( 5 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.21421, 4.32138, 21.0567 )
+transform = Transform( 0.198985, 0, 0.980003, 0, 1, 0, -0.980003, 0, 0.198985, 237.537, 5.6887, 313.429 )
 
-[node name="Terrain" parent="." index="3" instance=ExtResource( 6 )]
+[node name="R409" parent="Cars" index="3" instance=ExtResource( 6 )]
 
-[node name="Interface" parent="." index="4" instance=ExtResource( 7 )]
+transform = Transform( 0.284887, 0, 0.958561, 0, 1, 0, -0.958561, 0, 0.284887, 268.706, 7.9196, 163.9 )
+
+[node name="Terrain" parent="." index="3" instance=ExtResource( 7 )]
+
+[node name="Interface" parent="." index="4" instance=ExtResource( 8 )]
 
 [connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
 
