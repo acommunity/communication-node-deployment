@@ -206,7 +206,7 @@ _detail_objects_data = [ {
 
 [node name="central_communication" parent="." index="4" instance=ExtResource( 16 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 256.378, 8.6891, 267.557 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 256.378, 8.17497, 267.557 )
 
 [node name="PowerSupplier" parent="." index="5" instance=ExtResource( 17 )]
 
@@ -270,6 +270,30 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
 
+[node name="chr_tree7" parent="Forest/chr_tree_node6" index="3" instance=ExtResource( 19 )]
+
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 0.105331, 3.36696, -2.87054 )
+
+[node name="chr_tree8" parent="Forest/chr_tree_node6" index="4" instance=ExtResource( 19 )]
+
+transform = Transform( 1.31309, 0, 0.75549, 0, 1.51491, 0, -0.75549, 0, 1.31309, -5.59845, 5.27384, -0.824951 )
+
+[node name="chr_tree9" parent="Forest/chr_tree_node6" index="5" instance=ExtResource( 19 )]
+
+transform = Transform( 1.31309, 0, 0.75549, 0, 1.51491, 0, -0.75549, 0, 1.31309, -0.972336, 5.27384, -12.3604 )
+
+[node name="chr_tree10" parent="Forest/chr_tree_node6" index="6" instance=ExtResource( 19 )]
+
+transform = Transform( 1.31309, 0, 0.75549, 0, 1.51491, 0, -0.75549, 0, 1.31309, -18.5207, 5.27384, -27.4782 )
+
+[node name="chr_tree11" parent="Forest/chr_tree_node6" index="7" instance=ExtResource( 19 )]
+
+transform = Transform( 1.31309, 0, 0.75549, 0, 1.51491, 0, -0.75549, 0, 1.31309, -19.2135, 5.27384, -22.7436 )
+
+[node name="chr_tree12" parent="Forest/chr_tree_node6" index="8" instance=ExtResource( 19 )]
+
+transform = Transform( 1.31309, 0, 0.75549, 0, 1.51491, 0, -0.75549, 0, 1.31309, -22.3684, 3.05334, -26.0804 )
+
 [node name="chr_tree_node7" type="Spatial" parent="Forest" index="6"]
 
 editor/display_folded = true
@@ -286,6 +310,14 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 [node name="chr_tree6" parent="Forest/chr_tree_node7" index="2" instance=ExtResource( 19 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+
+[node name="chr_tree7" parent="Forest/chr_tree_node7" index="3" instance=ExtResource( 19 )]
+
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -14.3344, 0.841735, -18.2626 )
+
+[node name="chr_tree8" parent="Forest/chr_tree_node7" index="4" instance=ExtResource( 19 )]
+
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -15.1914, 0.841734, -12.2653 )
 
 [node name="chr_tree_node3" type="Spatial" parent="Forest" index="7"]
 
@@ -391,7 +423,7 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree6" parent="Forest/chr_tree_node10" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 2.64287, 0, 0.162558, 0, 2.64786, 0, -0.162558, 0, 2.64287, 2.86548, 0.841735, 1.70834 )
 
 [node name="chr_tree_node11" type="Spatial" parent="Forest" index="13"]
 
@@ -472,11 +504,11 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree5" parent="Forest/chr_tree_node16" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.98021, 0, 1.13932, 0, 2.28458, 0, -1.13932, 0, 1.98021, 1.82553, 0.841735, 8.78058 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node16" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 1.92906, 0, 1.10989, 0, 2.22556, 0, -1.10989, 0, 1.92906, 2.86551, 0.841735, 1.70828 )
 
 [node name="chr_tree_node17" type="Spatial" parent="Forest" index="18"]
 
@@ -497,12 +529,11 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node18" type="Spatial" parent="Forest" index="19"]
 
-editor/display_folded = true
 transform = Transform( 0.941008, 0, 0.338385, 0, 1, 0, -0.338385, 0, 0.941008, -35.9715, 2.01088, -11.1671 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node18" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.68643, 0, 1.4894, 0, 2.24996, 0, -1.4894, 0, 1.68643, 9.36339, 1.16881, 3.06805 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node18" index="1" instance=ExtResource( 19 )]
 
@@ -531,12 +562,11 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node20" type="Spatial" parent="Forest" index="21"]
 
-editor/display_folded = true
 transform = Transform( 0.941008, 0, 0.338385, 0, 1, 0, -0.338385, 0, 0.941008, -36.0359, 2.01089, -84.5648 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node20" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.07985, 0, 0.621297, 0, 1.24583, 0, -0.621297, 0, 1.07985, 9.36334, 1.16881, 3.06799 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node20" index="1" instance=ExtResource( 19 )]
 
@@ -803,16 +833,15 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node45" type="Spatial" parent="Forest" index="37"]
 
-editor/display_folded = true
 transform = Transform( 0.922209, 0, -0.386692, 0, 1, 0, 0.386692, 0, 0.922209, 46.2028, -2.28124, -226.179 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node45" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.44537, 8.32638, 3.78882 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node45" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.07767, 6.58571, 9.28695 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node45" index="2" instance=ExtResource( 19 )]
 
@@ -837,7 +866,6 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node51" type="Spatial" parent="Forest" index="39"]
 
-editor/display_folded = true
 transform = Transform( 0.469881, 0, -0.88273, 0, 1, 0, 0.88273, 0, 0.469881, 148.408, 0.842927, -229.267 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node51" index="0" instance=ExtResource( 19 )]
@@ -846,7 +874,7 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree5" parent="Forest/chr_tree_node51" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82553, 0.841735, 8.78064 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82553, 2.25307, 8.7807 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node51" index="2" instance=ExtResource( 19 )]
 
@@ -905,7 +933,6 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node47" type="Spatial" parent="Forest" index="43"]
 
-editor/display_folded = true
 transform = Transform( 0.922209, 0, -0.386692, 0, 1, 0, 0.386692, 0, 0.922209, 60.3726, 3.84246, -219.213 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node47" index="0" instance=ExtResource( 19 )]
@@ -918,11 +945,10 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree6" parent="Forest/chr_tree_node47" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 1.80407, 0, 0.615948, 0, 1.90632, 0, -0.615948, 0, 1.80407, 2.51285, 2.11491, 1.97864 )
 
 [node name="chr_tree_node50" type="Spatial" parent="Forest" index="44"]
 
-editor/display_folded = true
 transform = Transform( 0.922209, 0, -0.386692, 0, 1, 0, 0.386692, 0, 0.922209, 116.143, 1.07342, -231.379 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node50" index="0" instance=ExtResource( 19 )]
@@ -931,7 +957,7 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree5" parent="Forest/chr_tree_node50" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82556, 1.33357, 8.78058 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node50" index="2" instance=ExtResource( 19 )]
 
@@ -956,16 +982,15 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node24" type="Spatial" parent="Forest" index="46"]
 
-editor/display_folded = true
 transform = Transform( 0.941008, 0, 0.338385, 0, 1, 0, -0.338385, 0, 0.941008, 21.4137, 2.01089, -135.211 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node24" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.3634, 2.92912, 3.06802 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node24" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82553, 3.7319, 8.78059 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node24" index="2" instance=ExtResource( 19 )]
 
@@ -990,37 +1015,35 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node26" type="Spatial" parent="Forest" index="48"]
 
-editor/display_folded = true
 transform = Transform( 0.644254, 0, 0.501337, 0, 0.816335, 0, -0.501337, 0, 0.644254, 12.8184, 6.9531, -166.233 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node26" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.60927, 0, 0.925899, 0, 1.85662, 0, -0.925899, 0, 1.60927, 11.0579, -8.74236, 4.14249 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node26" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, -7.86845, 8.78061 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node26" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.86549, -8.79919, 1.70837 )
 
 [node name="chr_tree_node27" type="Spatial" parent="Forest" index="49"]
 
-editor/display_folded = true
 transform = Transform( 0.644254, 0, 0.501337, 0, 0.816335, 0, -0.501337, 0, 0.644254, 5.05518, 6.9531, -170.921 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node27" index="0" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36341, 1.16881, 3.06802 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.36346, -8.07669, 3.06793 )
 
 [node name="chr_tree5" parent="Forest/chr_tree_node27" index="1" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82552, 0.841735, 8.78059 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 1.82553, -7.80635, 8.78049 )
 
 [node name="chr_tree6" parent="Forest/chr_tree_node27" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.86554, -8.96036, 1.70831 )
 
 [node name="chr_tree_node28" type="Spatial" parent="Forest" index="50"]
 
@@ -1075,7 +1098,6 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node22" type="Spatial" parent="Forest" index="53"]
 
-editor/display_folded = true
 transform = Transform( 0.941008, 0, 0.338385, 0, 1, 0, -0.338385, 0, 0.941008, -38.8363, 2.01089, -120.859 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node22" index="0" instance=ExtResource( 19 )]
@@ -1088,7 +1110,7 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree6" parent="Forest/chr_tree_node22" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.8655, 0.841735, 1.70834 )
+transform = Transform( 1.65235, 0, 0.950684, 0, 1.90632, 0, -0.950684, 0, 1.65235, 2.86551, -0.526285, 1.70836 )
 
 [node name="chr_tree_node23" type="Spatial" parent="Forest" index="54"]
 
@@ -1109,7 +1131,6 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree_node13" type="Spatial" parent="Forest" index="55"]
 
-editor/display_folded = true
 transform = Transform( 0.941008, 0, 0.338385, 0, 1, 0, -0.338385, 0, 0.941008, 13.1146, -0.88202, -63.6476 )
 
 [node name="chr_tree4" parent="Forest/chr_tree_node13" index="0" instance=ExtResource( 19 )]
@@ -1122,7 +1143,7 @@ transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.6523
 
 [node name="chr_tree7" parent="Forest/chr_tree_node13" index="2" instance=ExtResource( 19 )]
 
-transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -5.92788, 0.999503, 10.7472 )
+transform = Transform( 2.00336, 0, 1.15264, 0, 2.31128, 0, -1.15264, 0, 2.00336, -5.92789, 0.999503, 10.7472 )
 
 [node name="chr_tree8" parent="Forest/chr_tree_node13" index="3" instance=ExtResource( 19 )]
 
