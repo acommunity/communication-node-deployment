@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/Game.gd" type="Script" id=1]
+[ext_resource path="res://scenes/game/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/cars/CentralCommunication.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/cars/PowerSupplier.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/cars/Moss.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/terrain/Terrain.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=7]
+
+[node name="Scene" type="Spatial" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+min_stage = 0
+max_stage = 9
+
+[node name="DirectionalLight" type="DirectionalLight" parent="." index="0"]
+
+transform = Transform( -1, -5.01437e-008, 7.16125e-008, 0, 0.819152, 0.573577, -8.74228e-008, 0.573577, -0.819152, 0, 38, -50 )
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 1.0
+light_indirect_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.1
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+directional_shadow_mode = 2
+directional_shadow_split_1 = 0.1
+directional_shadow_split_2 = 0.2
+directional_shadow_split_3 = 0.5
+directional_shadow_blend_splits = false
+directional_shadow_normal_bias = 0.8
+directional_shadow_bias_split_scale = 0.25
+directional_shadow_depth_range = 0
+directional_shadow_max_distance = 200.0
+
+[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.271, 3.43414, 21.9372 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Cars" type="Node" parent="." index="2"]
+
+[node name="CentralCommunication" parent="Cars" index="0" instance=ExtResource( 3 )]
+
+transform = Transform( 0.986372, 0, -0.164528, 0, 1, 0, 0.164528, 0, 0.986372, 13.353, 4.46409, 21.0449 )
+
+[node name="PowerSupplier" parent="Cars" index="1" instance=ExtResource( 4 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2904, 3.96205, 21.8634 )
+_sections_unfolded = [ "Collision", "Motion", "Transform" ]
+
+[node name="Moss" parent="Cars" index="2" instance=ExtResource( 5 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.21421, 4.32138, 21.0567 )
+
+[node name="Terrain" parent="." index="3" instance=ExtResource( 6 )]
+
+[node name="Interface" parent="." index="4" instance=ExtResource( 7 )]
+
+[connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
+
+[connection signal="eyes_enter" from="Player" to="." method="_on_Player_eyes_enter"]
+
+[connection signal="eyes_leave" from="Player" to="." method="_on_Player_eyes_leave"]
+
+
