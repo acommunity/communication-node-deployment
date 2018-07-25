@@ -26,6 +26,12 @@ func _unhandled_key_input(event):
 		if _stage < max_stage:
 			set_stage(_stage + 1)
 
+	if Input.is_action_pressed("normal_mode"):
+		get_node("Player").mode = 0
+
+	if Input.is_action_pressed("flight_mode"):
+		get_node("Player").mode = 1
+
 
 func _on_Player_eyes_enter(object):
 	var text = ""

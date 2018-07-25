@@ -6,6 +6,9 @@ signal eyes_leave(object)
 signal eyes_action(object)
 
 
+enum Mode { NORMAL = 0, FLIGTH = 1 }
+
+
 # Player camera position
 var _camera = Vector2()
 
@@ -13,8 +16,13 @@ var _camera_collider = null
 
 var _velocity = Vector3()
 
+export(Mode) var mode = NORMAL
+
 
 func _ready():
+	if mode == null:
+		mode = NORMAL
+
 	_camera.x = rad2deg(get_node("Head").get_rotation().y)
 	_camera.y = rad2deg(get_node("Head/Eyes").get_rotation().x)
 
@@ -36,7 +44,15 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_right"):
 		direction += aim.x
 
+	if mode == NORMAL:
+		_process_normal_mode(direction, delta)
+	elif mode == FLIGTH:
+		_process_flight_mode(direction, delta)
+
+
+func _process_normal_mode(direction, delta):
 	direction.y = 0
+
 	direction = direction.normalized()
 
 	var speed = 3
@@ -88,6 +104,19 @@ func _physics_process(delta):
 	_velocity = _velocity.linear_interpolate(direction * speed, delta * acceleration)
 
 	_velocity.y = velocity_y
+
+	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
+
+
+func _process_flight_mode(direction, delta):
+	_stop_moving_sound()
+
+	var speed = 4
+
+	if Input.is_action_pressed("move_faster"):
+		speed = 7
+
+	_velocity = _velocity.linear_interpolate(direction * speed, delta * 15)
 
 	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
 
