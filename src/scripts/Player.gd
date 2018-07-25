@@ -1,4 +1,4 @@
-extends RigidBody
+extends KinematicBody
 
 
 signal eyes_enter(object)
@@ -10,6 +10,8 @@ signal eyes_action(object)
 var _camera = Vector2()
 
 var _camera_collider = null
+
+var _velocity = Vector3()
 
 
 func _ready():
@@ -23,38 +25,39 @@ func _physics_process(delta):
 	var direction = Vector3()
 
 	if Input.is_action_pressed("move_forward"):
-		direction -= aim.x
+		direction -= aim.z
 
 	if Input.is_action_pressed("move_backward"):
-		direction += aim.x
-
-	if Input.is_action_pressed("move_left"):
 		direction += aim.z
 
+	if Input.is_action_pressed("move_left"):
+		direction -= aim.x
+
 	if Input.is_action_pressed("move_right"):
-		direction -= aim.z
+		direction += aim.x
 
 	direction.y = 0
 	direction = direction.normalized()
 
-	var speed = 2
+	var speed = 3
 
 	if Input.is_action_pressed("move_faster"):
-		speed = 4
+		speed = 5
 
-	get_node("Feet").axis_lock_angular_x = direction.x == 0
-	get_node("Feet").axis_lock_angular_z = direction.z == 0
+	var velocity_y = _velocity.y - delta * 9.8
 
-	get_node("Feet").set_angular_velocity(direction * speed * PI)
+	_velocity.y = 0
 
-	if get_node("RayCast").is_colliding():
-		get_node("Feet").axis_lock_linear_x = direction.x == 0
-		get_node("Feet").axis_lock_linear_z = direction.z == 0
+	var acceleration = 1
+
+	if is_on_floor():
+		acceleration = 5
+
+		if direction.length() == 0 || direction.dot(_velocity) < 0:
+			acceleration = 15
 
 		if Input.is_action_just_pressed("jump"):
-			var feet = get_node("Feet")
-
-			apply_impulse(translation, Vector3(0, 6, 0) * mass)
+			velocity_y = 4
 
 			get_node("Jump").play()
 
@@ -81,6 +84,12 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("action"):
 		if _camera_collider != null:
 			emit_signal("eyes_action", _camera_collider)
+
+	_velocity = _velocity.linear_interpolate(direction * speed, delta * acceleration)
+
+	_velocity.y = velocity_y
+
+	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
 
 
 func _unhandled_input(event):
