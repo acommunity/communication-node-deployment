@@ -9,6 +9,15 @@ export(int) var max_stage = 9
 var _stage = 0
 
 
+const PLAYERS = [
+	"Objects/CentralCommunication/AnimationPlayer",
+#	"Objects/PowerSupplier/AnimationPlayer",
+#	"Objects/Moss/AnimationPlayer",
+#	"Objects/R409/AnimationPlayer",
+#	"Interface/AnimationPlayer"
+]
+
+
 func _ready():
 	set_stage(0)
 
@@ -65,11 +74,8 @@ func set_stage(value):
 
 
 func _stage_is_playing():
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
-
-		var player = child.get_node("AnimationPlayer")
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.is_playing():
 			return true
@@ -80,27 +86,20 @@ func _stage_is_playing():
 func _set_next_stage():
 	_stage += 1
 
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
+	var str_stage = String(_stage)
 
-		var player = child.get_node("AnimationPlayer")
-
-		var str_stage = String(_stage)
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.has_animation(str_stage):
 			player.play(str_stage)
 
 
-
 func _set_prev_stage():
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
+	var str_stage = String(_stage)
 
-		var player = child.get_node("AnimationPlayer")
-
-		var str_stage = String(_stage)
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.has_animation(str_stage):
 			player.play_backwards(str_stage)

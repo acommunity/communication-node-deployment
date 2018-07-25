@@ -2,7 +2,7 @@
 
 [ext_resource path="res://media/textures/point.png" type="Texture" id=1]
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
