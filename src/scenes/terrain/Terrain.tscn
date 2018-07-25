@@ -39,7 +39,7 @@ _maps_data = [ [ {
 "id": 4
 } ] ]
 
-[node name="Terrain" type="Spatial" index="0"]
+[node name="Terrain" type="Spatial"]
 
 [node name="HTerrain" type="Spatial" parent="." index="0"]
 
