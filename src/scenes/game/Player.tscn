@@ -24,6 +24,7 @@ axis_lock_angular_z = false
 collision/safe_margin = 0.001
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
+mode = null
 
 [node name="Head" type="Spatial" parent="." index="0"]
 
