@@ -14,7 +14,7 @@ const PLAYERS = [
 #	"Objects/PowerSupplier/AnimationPlayer",
 #	"Objects/Moss/AnimationPlayer",
 #	"Objects/R409/AnimationPlayer",
-#	"Interface/AnimationPlayer"
+	"Interface/AnimationPlayer"
 ]
 
 
@@ -69,8 +69,6 @@ func set_stage(value):
 
 	while _stage > value:
 		_set_prev_stage()
-
-	get_node("Interface/StageTitle/Stage").text = String(value + 1)
 
 
 func _stage_is_playing():

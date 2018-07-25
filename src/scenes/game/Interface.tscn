@@ -1,8 +1,666 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://media/textures/point.png" type="Texture" id=1]
 
-[node name="Interface" type="Control"]
+[sub_resource type="Animation" id=1]
+
+resource_name = "1"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Произведение разметки выбранной площадкии и установка аппаратной машины, электростанции и выносного пульта в соответствии со схемой размещения станции на местности.
+", "Произведение разметки выбранной площадкии и установка аппаратной машины, электростанции и выносного пульта в соответствии со схемой размещения станции на местности.
+" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "1", "1" ]
+}
+
+[sub_resource type="Animation" id=8]
+
+resource_name = "10"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Подключение кабелей от электростанции к вводному щиту Д-24-02 аппаратной машины.", "Подключение кабелей от электростанции к вводному щиту Д-24-02 аппаратной машины." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "10", "10" ]
+}
+
+[sub_resource type="Animation" id=9]
+
+resource_name = "11"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Подключение кабелей от узла связи к вводному щиту Д-66 на оконечных и узловых станциях.", "Подключение кабелей от узла связи к вводному щиту Д-66 на оконечных и узловых станциях." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "11", "11" ]
+}
+
+[sub_resource type="Animation" id=12]
+
+resource_name = "12"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Приведение антенных устройств в рабочее проложение производжится тремя членами обслуживающего персонала в седующей последовательности по номерам.", "Приведение антенных устройств в рабочее проложение производжится тремя членами обслуживающего персонала в седующей последовательности по номерам." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "12", "12" ]
+}
+
+[sub_resource type="Animation" id=13]
+
+resource_name = "13"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№1 - поднимается на крышу кузова аппаратной машины со стороны кабины.
+
+№2, №3 - снимите лестницу с левго борта машины, для чего отворачиваются два винта, устанавливается лестница сзади машины к основанию антенны.", "№1 - поднимается на крышу кузова аппаратной машины со стороны кабины.
+
+№2, №3 - снимите лестницу с левго борта машины, для чего отворачиваются два винта, устанавливается лестница сзади машины к основанию антенны." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "13", "13" ]
+}
+
+[sub_resource type="Animation" id=14]
+
+resource_name = "14"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№1, №2 - закрепляют тягу с помощью пальцев к левому кронштейну отражателя, для чего отворачиваются барашковые гайки, крепящие прижимные планки и освобождается крайняя тяга с правого борта.", "№1, №2 - закрепляют тягу с помощью пальцев к левому кронштейну отражателя, для чего отворачиваются барашковые гайки, крепящие прижимные планки и освобождается крайняя тяга с правого борта." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "14", "14" ]
+}
+
+[sub_resource type="Animation" id=15]
+
+resource_name = "15"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№1 - поднимается на отражатель к кронштейну крепления тяги. 
+
+№2 - подает ему один конец тяги; тяга присоединяется к отражателю так, чтобы закрашенный в белую краску конец тяги был со стороны электромеханизма.
+
+№3 - поднимается по лестнице на крышу машины на основание задней антенны с молотком, для крепления тяг подается №1.", "№1 - поднимается на отражатель к кронштейну крепления тяги. 
+
+№2 - подает ему один конец тяги; тяга присоединяется к отражателю так, чтобы закрашенный в белую краску конец тяги был со стороны электромеханизма.
+
+№3 - поднимается по лестнице на крышу машины на основание задней антенны с молотком, для крепления тяг подается №1." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "15", "15" ]
+}
+
+[sub_resource type="Animation" id=16]
+
+resource_name = "16"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№2, №3 - освобождает вторую тягу с правого борта машин.
+
+№1 - остается на отражателе", "№2, №3 - освобождает вторую тягу с правого борта машин.
+
+№1 - остается на отражателе" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "16", "16" ]
+}
+
+[sub_resource type="Animation" id=17]
+
+resource_name = "17"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№2 - подает №1 тягу и помогает ее закрепить к кронштейну отражателя.
+
+№1 - закрепляет тягу к кронштейну отражателя, так чтобы плашка с надписью \"А1\" была сверху и напротив планки второй тяги, передает молоток №2.
+
+№3 - отсоединяет 2 зажима, крепящих верхний отражатель к нижнему и ставит из в пружинные захваты на отражателе антенны \"А1\" (верхней); присоединяет страховочный тросик с помощью карабинов одним концом к верхней точке обрамления верхнего отражателя, а другим концом к нижней точке обрамления нижнего отражателя.", "№2 - подает №1 тягу и помогает ее закрепить к кронштейну отражателя.
+
+№1 - закрепляет тягу к кронштейну отражателя, так чтобы плашка с надписью \"А1\" была сверху и напротив планки второй тяги, передает молоток №2.
+
+№3 - отсоединяет 2 зажима, крепящих верхний отражатель к нижнему и ставит из в пружинные захваты на отражателе антенны \"А1\" (верхней); присоединяет страховочный тросик с помощью карабинов одним концом к верхней точке обрамления верхнего отражателя, а другим концом к нижней точке обрамления нижнего отражателя." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "17", "17" ]
+}
+
+[sub_resource type="Animation" id=18]
+
+resource_name = "18"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№2 - освобождает хомуты крепления переднего электромеханизма.
+
+№1 - опускается с отражателя на основание задней антенны и при необходимости помогает №3.", "№2 - освобождает хомуты крепления переднего электромеханизма.
+
+№1 - опускается с отражателя на основание задней антенны и при необходимости помогает №3." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "18", "18" ]
+}
+
+[sub_resource type="Animation" id=19]
+
+resource_name = "19"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "№2 - откидывает свободный конец электромеханизма закрай основания.
+
+№1, №3 - приподнимает верхний отражатель в рабочее положение; 
+
+№2 - присоединяет с помощью пальцев тяги к кронштейнам электромеханизма.", "№2 - откидывает свободный конец электромеханизма закрай основания.
+
+№1, №3 - приподнимает верхний отражатель в рабочее положение; 
+
+№2 - присоединяет с помощью пальцев тяги к кронштейнам электромеханизма." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "19", "19" ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "2"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Установка буссоли в центре выбранного места для установки аппаратной машины.", "Установка буссоли в центре выбранного места для установки аппаратной машины." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "2", "2" ]
+}
+
+[sub_resource type="Animation" id=20]
+
+resource_name = "20"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Аналогичные действия производятся с задней антенной.", "Аналогичные действия производятся с задней антенной." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "20", "20" ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "3"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Выставление с помощью буссоли заданного магнитного азимутального угла по методике, приведенной в техническом описании буссоли.", "Выставление с помощью буссоли заданного магнитного азимутального угла по методике, приведенной в техническом описании буссоли." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "3", "3" ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource_name = "4"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Поворот маникуляра буссоли влево на 90 градусов от выбранного направления связи, выставление вехи по перекрестию трубы на расстоянии 4-5м от буссоли.", "Поворот маникуляра буссоли влево на 90 градусов от выбранного направления связи, выставление вехи по перекрестию трубы на расстоянии 4-5м от буссоли." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "4", "4" ]
+}
+
+[sub_resource type="Animation" id=5]
+
+resource_name = "5"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Поворот маникуляра буссоли влево на 90 градусов от выбранного направления связи, выставление вехи по перекрестию трубы на расстоянии 4-5м от буссоли.", "Поворот маникуляра буссоли влево на 90 градусов от выбранного направления связи, выставление вехи по перекрестию трубы на расстоянии 4-5м от буссоли." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "5", "5" ]
+}
+
+[sub_resource type="Animation" id=6]
+
+resource_name = "6"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Установка аппаратной машины так, чтобы левый борт машины был направлен на корреспондента.", "Установка аппаратной машины так, чтобы левый борт машины был направлен на корреспондента." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "6", "6" ]
+}
+
+[sub_resource type="Animation" id=7]
+
+resource_name = "7"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Установка тарелок домкратов, находящихся в такелажном ящеке машины МОСС и домкратов, находящихся в машине МОСС на установленные тарелки. Фиксация кузова с помощью имеющихся на домкратах металлических стержней.", "Установка тарелок домкратов, находящихся в такелажном ящеке машины МОСС и домкратов, находящихся в машине МОСС на установленные тарелки. Фиксация кузова с помощью имеющихся на домкратах металлических стержней." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "7", "7" ]
+}
+
+[sub_resource type="Animation" id=10]
+
+resource_name = "8"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Заземление аппаратной машины и электростанции. Подключение соединительных кабелей.", "Заземление аппаратной машины и электростанции. Подключение соединительных кабелей." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "8", "8" ]
+}
+
+[sub_resource type="Animation" id=11]
+
+resource_name = "9"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageDescription/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Размотка силового кабеля с барабана, расположенного в электростанции, укладка его между аппаратной машиной и электростанцией.", "Размотка силового кабеля с барабана, расположенного в электростанции, укладка его между аппаратной машиной и электростанцией." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageTitle/Stage:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "9", "9" ]
+}
+
+[node name="Interface" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -69,7 +727,7 @@ anchor_top = 0.5
 anchor_right = 0.7
 anchor_bottom = 0.6
 margin_top = 10.0
-margin_bottom = -9.99997
+margin_bottom = -10.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -151,11 +809,11 @@ editor/display_folded = true
 anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
+anchor_bottom = 1.0
 margin_left = -300.0
 margin_top = 50.0
 margin_right = -10.0
-margin_bottom = 160.0
+margin_bottom = -10.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -163,7 +821,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0, 0, 0, 0.501961 )
-_sections_unfolded = [ "Size Flags" ]
+_sections_unfolded = [ "Anchor", "Margin", "Size Flags" ]
 
 [node name="Text" type="Label" parent="StageDescription" index="0"]
 
@@ -174,17 +832,49 @@ anchor_bottom = 1.0
 margin_left = 10.0
 margin_top = 10.0
 margin_right = -10.0
-margin_bottom = -10.0
+margin_bottom = 73.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Описание этапа развертывания"
+text = "Произведение разметки выбранной площадкии и установка аппаратной машины, электростанции и выносного пульта в соответствии со схемой размещения станции на местности.
+"
+align = 3
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Margin" ]
+_sections_unfolded = [ "Anchor", "Margin" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/1 = SubResource( 1 )
+anims/10 = SubResource( 8 )
+anims/11 = SubResource( 9 )
+anims/12 = SubResource( 12 )
+anims/13 = SubResource( 13 )
+anims/14 = SubResource( 14 )
+anims/15 = SubResource( 15 )
+anims/16 = SubResource( 16 )
+anims/17 = SubResource( 17 )
+anims/18 = SubResource( 18 )
+anims/19 = SubResource( 19 )
+anims/2 = SubResource( 2 )
+anims/20 = SubResource( 20 )
+anims/3 = SubResource( 3 )
+anims/4 = SubResource( 4 )
+anims/5 = SubResource( 5 )
+anims/6 = SubResource( 6 )
+anims/7 = SubResource( 7 )
+anims/8 = SubResource( 10 )
+anims/9 = SubResource( 11 )
+blend_times = [  ]
 
 
