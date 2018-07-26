@@ -660,7 +660,7 @@ tracks/1/keys = {
 "values": [ "9", "9" ]
 }
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
