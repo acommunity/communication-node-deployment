@@ -1,25 +1,25 @@
 extends Spatial
 
 
-export(int) var min_stage = 0
+export(int) var min_stage = 1
 
 export(int) var max_stage = 9
 
 
-var _stage = 0
+var _stage = 1
 
 
 const PLAYERS = [
 	"Objects/CentralCommunication/AnimationPlayer",
 #	"Objects/PowerSupplier/AnimationPlayer",
 #	"Objects/Moss/AnimationPlayer",
-#	"Objects/R409/AnimationPlayer",
+	"Objects/R409/AnimationPlayer",
 	"Interface/AnimationPlayer"
 ]
 
 
 func _ready():
-	set_stage(0)
+	set_stage(1)
 
 
 func _unhandled_key_input(event):
@@ -82,8 +82,6 @@ func _stage_is_playing():
 
 
 func _set_next_stage():
-	_stage += 1
-
 	var str_stage = String(_stage)
 
 	for player_path in PLAYERS:
@@ -92,8 +90,12 @@ func _set_next_stage():
 		if player.has_animation(str_stage):
 			player.play(str_stage)
 
+	_stage += 1
+
 
 func _set_prev_stage():
+	_stage -= 1
+
 	var str_stage = String(_stage)
 
 	for player_path in PLAYERS:
@@ -101,5 +103,3 @@ func _set_prev_stage():
 
 		if player.has_animation(str_stage):
 			player.play_backwards(str_stage)
-
-	_stage -= 1
