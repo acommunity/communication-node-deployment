@@ -49,6 +49,23 @@ func _physics_process(delta):
 	elif mode == FLIGTH:
 		_process_flight_mode(direction, delta)
 
+	if get_node("Head/Eyes/RayCast").is_colliding():
+		var collider = get_node("Head/Eyes/RayCast").get_collider()
+
+		if collider != _camera_collider:
+			_camera_collider = collider
+
+			emit_signal("eyes_enter", _camera_collider)
+	else:
+		if _camera_collider != null:
+			emit_signal("eyes_leave", _camera_collider)
+
+			_camera_collider = null
+
+	if Input.is_action_just_pressed("action"):
+		if _camera_collider != null:
+			emit_signal("eyes_action", _camera_collider)
+
 
 func _process_normal_mode(direction, delta):
 	direction.y = 0
@@ -83,23 +100,6 @@ func _process_normal_mode(direction, delta):
 			_stop_moving_sound()
 	else:
 		_stop_moving_sound()
-
-	if get_node("Head/Eyes/RayCast").is_colliding():
-		var collider = get_node("Head/Eyes/RayCast").get_collider()
-
-		if collider != _camera_collider:
-			_camera_collider = collider
-
-			emit_signal("eyes_enter", _camera_collider)
-	else:
-		if _camera_collider != null:
-			emit_signal("eyes_leave", _camera_collider)
-
-			_camera_collider = null
-
-	if Input.is_action_just_pressed("action"):
-		if _camera_collider != null:
-			emit_signal("eyes_action", _camera_collider)
 
 	_velocity = _velocity.linear_interpolate(direction * speed, delta * acceleration)
 
