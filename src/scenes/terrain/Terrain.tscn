@@ -82,6 +82,7 @@ _detail_objects_data = [ {
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 248.906, 0, 270.602 )
+visible = false
 
 [node name="chr_tree" parent="Forest" index="0" instance=ExtResource( 14 )]
 
