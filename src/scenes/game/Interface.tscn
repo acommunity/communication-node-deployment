@@ -1,10 +1,147 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://media/textures/point.png" type="Texture" id=1]
 
 [sub_resource type="Animation" id=1]
 
-resource_name = "15"
+resource_name = "1"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "1", "1" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageDescription/Text:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Производится развертывание радиореллейной станции Р-409.", "Производится развертывание радиореллейной станции Р-409." ]
+}
+
+[sub_resource type="Animation" id=22]
+
+resource_name = "10"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "10", "10" ]
+}
+
+[sub_resource type="Animation" id=23]
+
+resource_name = "11"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "11", "11" ]
+}
+
+[sub_resource type="Animation" id=24]
+
+resource_name = "12"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "12", "12" ]
+}
+
+[sub_resource type="Animation" id=25]
+
+resource_name = "13"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "13", "13" ]
+}
+
+[sub_resource type="Animation" id=26]
+
+resource_name = "14"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "14", "14" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StageDescription/Text:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Производится развертывание радиореллейной станции Р-409.", "Производится развертывание радиореллейной станции Р-409." ]
+}
+
+[sub_resource type="Animation" id=2]
+
 length = 1.0
 loop = false
 step = 0.1
@@ -35,9 +172,8 @@ tracks/1/keys = {
 "values": [ "1", "1" ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource_name = "16"
 length = 1.0
 loop = false
 step = 0.1
@@ -66,9 +202,8 @@ tracks/1/keys = {
 "values": [ "2", "2" ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "17"
 length = 1.0
 loop = false
 step = 0.1
@@ -97,9 +232,8 @@ tracks/1/keys = {
 "values": [ "3", "3" ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "18"
 length = 1.0
 loop = false
 step = 0.1
@@ -128,9 +262,8 @@ tracks/1/keys = {
 "values": [ "4", "4" ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 
-resource_name = "19"
 length = 1.0
 loop = false
 step = 0.1
@@ -159,9 +292,27 @@ tracks/1/keys = {
 "values": [ "5", "5" ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=27]
 
-resource_name = "20"
+resource_name = "2"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "2", "2" ]
+}
+
+[sub_resource type="Animation" id=7]
+
 length = 1.0
 loop = false
 step = 0.1
@@ -190,9 +341,8 @@ tracks/1/keys = {
 "values": [ "6", "6" ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=8]
 
-resource_name = "21"
 length = 1.0
 loop = false
 step = 0.1
@@ -221,7 +371,7 @@ tracks/1/keys = {
 "values": [ "8", "8" ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=9]
 
 length = 1.0
 loop = false
@@ -251,9 +401,8 @@ tracks/1/keys = {
 "values": [ "7", "7" ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=10]
 
-resource_name = "23"
 length = 1.0
 loop = false
 step = 0.1
@@ -282,7 +431,7 @@ tracks/1/keys = {
 "values": [ "9", "9" ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=11]
 
 length = 1.0
 loop = false
@@ -312,7 +461,7 @@ tracks/1/keys = {
 "values": [ "10", "10" ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=12]
 
 length = 1.0
 loop = false
@@ -342,9 +491,8 @@ tracks/1/keys = {
 "values": [ "11", "11" ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=13]
 
-resource_name = "26"
 length = 1.0
 loop = false
 step = 0.1
@@ -373,9 +521,8 @@ tracks/1/keys = {
 "values": [ "12", "12" ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=14]
 
-resource_name = "27"
 length = 1.0
 loop = false
 step = 0.1
@@ -408,9 +555,8 @@ tracks/1/keys = {
 "values": [ "13", "13" ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=15]
 
-resource_name = "28"
 length = 1.0
 loop = false
 step = 0.1
@@ -439,9 +585,8 @@ tracks/1/keys = {
 "values": [ "14", "14" ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=16]
 
-resource_name = "29"
 length = 1.0
 loop = false
 step = 0.1
@@ -478,9 +623,27 @@ tracks/1/keys = {
 "values": [ "15", "15" ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=28]
 
-resource_name = "30"
+resource_name = "3"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "3", "3" ]
+}
+
+[sub_resource type="Animation" id=17]
+
 length = 1.0
 loop = false
 step = 0.1
@@ -513,9 +676,8 @@ tracks/1/keys = {
 "values": [ "16", "16" ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=18]
 
-resource_name = "31"
 length = 1.0
 loop = false
 step = 0.1
@@ -552,9 +714,8 @@ tracks/1/keys = {
 "values": [ "17", "17" ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=19]
 
-resource_name = "32"
 length = 1.0
 loop = false
 step = 0.1
@@ -587,9 +748,8 @@ tracks/1/keys = {
 "values": [ "18", "18" ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=20]
 
-resource_name = "33"
 length = 1.0
 loop = false
 step = 0.1
@@ -626,9 +786,8 @@ tracks/1/keys = {
 "values": [ "19", "19" ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=21]
 
-resource_name = "34"
 length = 1.0
 loop = false
 step = 0.1
@@ -657,7 +816,121 @@ tracks/1/keys = {
 "values": [ "20", "20" ]
 }
 
-[node name="Interface" type="Control"]
+[sub_resource type="Animation" id=29]
+
+resource_name = "4"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "4", "4" ]
+}
+
+[sub_resource type="Animation" id=30]
+
+resource_name = "5"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "5", "5" ]
+}
+
+[sub_resource type="Animation" id=31]
+
+resource_name = "6"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "6", "6" ]
+}
+
+[sub_resource type="Animation" id=32]
+
+resource_name = "7"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "7", "7" ]
+}
+
+[sub_resource type="Animation" id=33]
+
+resource_name = "8"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "8", "8" ]
+}
+
+[sub_resource type="Animation" id=34]
+
+resource_name = "9"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("StageTitle/Stage:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "9", "9" ]
+}
+
+[node name="Interface" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -740,7 +1013,6 @@ _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
 [node name="StageTitle" type="ColorRect" parent="." index="3"]
 
-editor/display_folded = true
 anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -802,7 +1074,6 @@ _sections_unfolded = [ "Anchor", "Margin" ]
 
 [node name="StageDescription" type="ColorRect" parent="." index="4"]
 
-editor/display_folded = true
 anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -836,8 +1107,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Произведение разметки выбранной площадкии и установка аппаратной машины, электростанции и выносного пульта в соответствии со схемой размещения станции на местности.
-"
+text = "Производится развертывание радиореллейной станции Р-409."
 align = 3
 autowrap = true
 percent_visible = 1.0
@@ -852,26 +1122,40 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/15 = SubResource( 1 )
-anims/16 = SubResource( 2 )
-anims/17 = SubResource( 3 )
-anims/18 = SubResource( 4 )
-anims/19 = SubResource( 5 )
-anims/20 = SubResource( 6 )
-anims/21 = SubResource( 7 )
-anims/22 = SubResource( 8 )
-anims/23 = SubResource( 9 )
-anims/24 = SubResource( 10 )
-anims/25 = SubResource( 11 )
-anims/26 = SubResource( 12 )
-anims/27 = SubResource( 13 )
-anims/28 = SubResource( 14 )
-anims/29 = SubResource( 15 )
-anims/30 = SubResource( 16 )
-anims/31 = SubResource( 17 )
-anims/32 = SubResource( 18 )
-anims/33 = SubResource( 19 )
-anims/34 = SubResource( 20 )
+anims/1 = SubResource( 1 )
+anims/10 = SubResource( 22 )
+anims/11 = SubResource( 23 )
+anims/12 = SubResource( 24 )
+anims/13 = SubResource( 25 )
+anims/14 = SubResource( 26 )
+anims/15 = SubResource( 2 )
+anims/16 = SubResource( 3 )
+anims/17 = SubResource( 4 )
+anims/18 = SubResource( 5 )
+anims/19 = SubResource( 6 )
+anims/2 = SubResource( 27 )
+anims/20 = SubResource( 7 )
+anims/21 = SubResource( 8 )
+anims/22 = SubResource( 9 )
+anims/23 = SubResource( 10 )
+anims/24 = SubResource( 11 )
+anims/25 = SubResource( 12 )
+anims/26 = SubResource( 13 )
+anims/27 = SubResource( 14 )
+anims/28 = SubResource( 15 )
+anims/29 = SubResource( 16 )
+anims/3 = SubResource( 28 )
+anims/30 = SubResource( 17 )
+anims/31 = SubResource( 18 )
+anims/32 = SubResource( 19 )
+anims/33 = SubResource( 20 )
+anims/34 = SubResource( 21 )
+anims/4 = SubResource( 29 )
+anims/5 = SubResource( 30 )
+anims/6 = SubResource( 31 )
+anims/7 = SubResource( 32 )
+anims/8 = SubResource( 33 )
+anims/9 = SubResource( 34 )
 blend_times = [  ]
 
 
