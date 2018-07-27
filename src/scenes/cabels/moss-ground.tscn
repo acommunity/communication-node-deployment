@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/cabels/part-types/ground.tscn" type="PackedScene" id=1]
+
+[node name="moss-ground" type="Spatial"]
+
+editor/display_folded = true
+transform = Transform( 0.912002, 0, -0.410187, 0, 1, 0, 0.410187, 0, 0.912002, 0.351303, 1.17816, -72.2877 )
+
+[node name="cabel-part39" type="Spatial" parent="." index="0" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0716416, -0.0898325, 0.993377, 0.0465227, 0.995152, 0.0866381, -0.996345, 0.0400077, 0.0754734, -0.652145, -0.0615082, -0.238815 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part42" type="Spatial" parent="." index="1" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0576189, -0.224615, 0.972742, 0.127452, 0.968043, 0.215981, -0.99017, 0.111534, 0.0844059, -5.6116, -0.487082, -0.544022 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part40" type="Spatial" parent="." index="2" instance=ExtResource( 1 )]
+
+transform = Transform( 0.434255, 0.013101, -0.900694, -0.0028269, 0.999909, 0.0131812, 0.900786, -0.00317782, 0.434252, 0.869019, -0.26875, -0.322609 )
+_sections_unfolded = [ "Transform" ]
+
+
