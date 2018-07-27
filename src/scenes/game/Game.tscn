@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/game/Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,15 @@
 [ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=14]
 [ext_resource path="res://media/sounds/in-game.wav" type="AudioStream" id=15]
 [ext_resource path="res://scenes/cabels/409-423.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/cabels/423-409direction.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/cabels/moss-power.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/cabels/power-423-krhs4x6.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/cabels/power-423-p274m.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/cabels/part-types/krhs4x12.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/cabels/409-ground.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/cabels/moss-ground.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/cabels/power-ground.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/cabels/423-ground.tscn" type="PackedScene" id=25]
 
 [sub_resource type="PanoramaSky" id=1]
 
@@ -101,6 +110,13 @@ adjustment_brightness = 1.0
 adjustment_contrast = 1.0
 adjustment_saturation = 1.0
 _sections_unfolded = [ "Background" ]
+
+[sub_resource type="CubeMesh" id=3]
+
+size = Vector3( 2, 2, 2 )
+subdivide_width = 0
+subdivide_height = 0
+subdivide_depth = 0
 
 [node name="Scene" type="Spatial" index="0"]
 
@@ -216,6 +232,129 @@ doppler_tracking = 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 237.045, 4.00212, 261.196 )
 
 [node name="409-423" parent="cabels" index="0" instance=ExtResource( 16 )]
+
+[node name="423-409direction2" parent="cabels" index="1" instance=ExtResource( 17 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.7347, 0, -75.3057 )
+
+[node name="moss-power" parent="cabels" index="2" instance=ExtResource( 18 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.18384, 0.823524, -15.0726 )
+
+[node name="power-423-krhs4x6" parent="cabels" index="3" instance=ExtResource( 19 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23962, 0.693003, -16.304 )
+
+[node name="power-423-p274m" parent="cabels" index="4" instance=ExtResource( 20 )]
+
+[node name="power-transformator" type="Spatial" parent="cabels" index="5"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71582, 0.449563, -13.675 )
+
+[node name="cabel-part39" parent="cabels/power-transformator" index="0" instance=ExtResource( 21 )]
+
+transform = Transform( -0.866199, -0.0408734, 0.498025, 0.0757961, 0.97437, 0.211798, -0.493917, 0.221207, -0.8409, 5.49817, -1.08578, -15.9709 )
+
+[node name="cabel-part40" parent="cabels/power-transformator" index="1" instance=ExtResource( 21 )]
+
+transform = Transform( -0.514675, -0.103867, 0.85107, -1.87905e-05, 0.992636, 0.121133, -0.857385, 0.0623282, -0.510887, 3.39067, -2.21774, -11.9592 )
+
+[node name="cabel-part41" parent="cabels/power-transformator" index="2" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0362397, 0.0400167, 0.998542, 6.21162e-06, 0.999198, -0.0400432, -0.999343, 0.00145736, 0.0362104, -0.697617, -2.867, -9.42831 )
+
+[node name="cabel-part42" parent="cabels/power-transformator" index="3" instance=ExtResource( 21 )]
+
+transform = Transform( 0.213972, -0.019197, 0.976651, 0.00215303, 0.999814, 0.0191805, -0.976838, -0.00200134, 0.213974, -5.64415, -2.77511, -9.56177 )
+
+[node name="cabel-part43" parent="cabels/power-transformator" index="4" instance=ExtResource( 21 )]
+
+transform = Transform( 0.168329, -0.0313301, 0.985233, 0.00473713, 0.999509, 0.0309747, -0.98572, -0.000546747, 0.168394, -10.3963, -2.97909, -10.5941 )
+
+[node name="cabel-part44" parent="cabels/power-transformator" index="5" instance=ExtResource( 21 )]
+
+transform = Transform( -0.0251593, -0.00404212, 0.999675, 0.00541348, 0.999977, 0.00417958, -0.999669, 0.00551688, -0.0251369, -15.2418, -3.21573, -11.3994 )
+
+[node name="cabel-part45" parent="cabels/power-transformator" index="6" instance=ExtResource( 21 )]
+
+transform = Transform( -0.0248481, 0.0473193, 0.998571, 0.00669845, 0.998865, -0.0471666, -0.999669, 0.00551688, -0.0251369, -20.1226, -3.21573, -11.276 )
+
+[node name="cabel-part46" parent="cabels/power-transformator" index="7" instance=ExtResource( 21 )]
+
+transform = Transform( -0.0247515, 0.0613594, 0.997809, 0.00704717, 0.998101, -0.0612025, -0.999669, 0.00551688, -0.0251369, -25.0347, -2.92389, -11.132 )
+
+[node name="cabel-part47" parent="cabels/power-transformator" index="8" instance=ExtResource( 21 )]
+
+transform = Transform( -0.0242713, 0.122615, 0.992157, 0.00855578, 0.992439, -0.122441, -0.999669, 0.00551688, -0.0251369, -29.9277, -2.81887, -10.9375 )
+
+[node name="cabel-part48" parent="cabels/power-transformator" index="9" instance=ExtResource( 21 )]
+
+transform = Transform( -0.0248505, 0.04697, 0.998587, 0.00668976, 0.998881, -0.0468174, -0.999669, 0.00551688, -0.0251369, -34.8356, -2.36372, -10.7721 )
+
+[node name="cabel-part49" parent="cabels/power-transformator" index="10" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0738168, 0.0355164, 0.996639, 0.00747926, 0.999318, -0.0361658, -0.997244, 0.0101238, 0.0735008, -39.8132, -2.26998, -10.5841 )
+
+[node name="cabel-part50" parent="cabels/power-transformator" index="11" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0734972, -0.000721481, 0.997295, 0.0101494, 0.999949, -2.4572e-05, -0.997244, 0.0101238, 0.0735008, -44.6705, -2.21499, -10.9213 )
+
+[node name="cabel-part51" parent="cabels/power-transformator" index="12" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0734972, -0.000721481, 0.997295, 0.0101494, 0.999949, -2.4572e-05, -0.997244, 0.0101238, 0.0735008, -49.6603, -2.15107, -11.3049 )
+
+[node name="cabel-part52" parent="cabels/power-transformator" index="13" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0728265, -0.0558077, 0.995782, 0.014183, 0.99839, 0.0549166, -0.997244, 0.0101238, 0.0735008, -54.694, -2.15107, -11.7376 )
+
+[node name="cabel-part53" parent="cabels/power-transformator" index="14" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0728265, -0.0558077, 0.995782, 0.014183, 0.99839, 0.0549166, -0.997244, 0.0101238, 0.0735008, -59.5289, -2.4681, -12.0232 )
+
+[node name="cabel-part54" parent="cabels/power-transformator" index="15" instance=ExtResource( 21 )]
+
+transform = Transform( 0.0733867, -0.0112124, 0.997241, 0.01092, 0.999886, 0.0104385, -0.997244, 0.0101238, 0.0735008, -66.2352, -2.84181, -12.3346 )
+
+[node name="cabel-part55" parent="cabels/power-transformator" index="16" instance=ExtResource( 21 )]
+
+transform = Transform( 0.00394378, 0.0016839, 0.999991, 0.0108728, 0.99994, -0.0017267, -0.999933, 0.0108795, 0.00392523, -71.1035, -2.94755, -12.6985 )
+
+[node name="cabel-part56" parent="cabels/power-transformator" index="17" instance=ExtResource( 21 )]
+
+transform = Transform( 0.00394378, 0.0016839, 0.999991, 0.0108728, 0.99994, -0.0017267, -0.999933, 0.0108795, 0.00392523, -76.0487, -2.94755, -12.71 )
+
+[node name="cabel-part57" parent="cabels/power-transformator" index="18" instance=ExtResource( 21 )]
+
+transform = Transform( 0.00402783, 0.00942486, 0.999948, 0.0108419, 0.999897, -0.00946805, -0.999933, 0.0108795, 0.00392523, -81.0049, -2.94755, -12.7244 )
+
+[node name="cabel-part58" parent="cabels/power-transformator" index="19" instance=ExtResource( 21 )]
+
+transform = Transform( 0.00348269, -0.0404016, 0.999178, 0.0110291, 0.999124, 0.040361, -0.999933, 0.0108795, 0.00392523, -85.9151, -2.94755, -12.7373 )
+
+[node name="MeshInstance" type="MeshInstance" parent="cabels/power-transformator" index="20"]
+
+transform = Transform( 0.989634, 0, -0.143611, 0, 1, 0, 0.143611, 0, 0.989634, -65.3569, -2.60932, -12.3586 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="409-ground" parent="cabels" index="6" instance=ExtResource( 22 )]
+
+[node name="moss-ground" parent="cabels" index="7" instance=ExtResource( 23 )]
+
+[node name="power-ground" parent="cabels" index="8" instance=ExtResource( 24 )]
+
+[node name="423-ground" parent="cabels" index="9" instance=ExtResource( 25 )]
 
 [connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
 

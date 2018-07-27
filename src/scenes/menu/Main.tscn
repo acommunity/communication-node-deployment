@@ -252,7 +252,6 @@ _sections_unfolded = [ "Anchor", "Margin", "Material", "Visibility" ]
 
 stream = ExtResource( 5 )
 volume_db = 0.0
-pitch_scale = 1.0
 autoplay = true
 mix_target = 0
 bus = "Master"
