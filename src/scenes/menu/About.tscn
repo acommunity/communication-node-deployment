@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://media/fonts/arial.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 25
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 20
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 1 )
@@ -52,6 +60,7 @@ _sections_unfolded = [ "Anchor", "Margin" ]
 
 [node name="Scroll" type="ScrollContainer" parent="." index="1"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -75,12 +84,13 @@ _sections_unfolded = [ "Size Flags" ]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Scroll" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 1260.0
-margin_bottom = 660.0
+margin_right = 1248.0
+margin_bottom = 920.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -90,14 +100,14 @@ size_flags_vertical = 3
 alignment = 0
 _sections_unfolded = [ "Anchor" ]
 
-[node name="DevelopersTitle" type="Label" parent="Scroll/VBoxContainer" index="0"]
+[node name="ManagerTitle" type="Label" parent="Scroll/VBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 1260.0
-margin_bottom = 102.0
+margin_right = 1248.0
+margin_bottom = 29.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -105,79 +115,31 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
-text = "Разработка"
+text = "Руководитель"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
-[node name="Developers" type="Label" parent="Scroll/VBoxContainer" index="1"]
+[node name="Manager" type="Label" parent="Scroll/VBoxContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 106.0
-margin_right = 1260.0
-margin_bottom = 208.0
+margin_top = 33.0
+margin_right = 1248.0
+margin_bottom = 118.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Криницин Антон
-Удовин Иван
-Рожков Дмитрий"
-align = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Size Flags" ]
-
-[node name="ModelersTitle" type="Label" parent="Scroll/VBoxContainer" index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 212.0
-margin_right = 1260.0
-margin_bottom = 314.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 1 )
-text = "Моделирование"
-align = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Size Flags", "custom_fonts" ]
-
-[node name="Modelers" type="Label" parent="Scroll/VBoxContainer" index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 318.0
-margin_right = 1260.0
-margin_bottom = 447.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Криницин Антон
-Рогачевский Мартин
-Алейников Владислав
-Филиппович Вадим
-Чмуров Максим
+text = "Начальник цикла кафедры связи,
+подполковник
+Романовский Сергей Викторович
 "
 align = 1
 percent_visible = 1.0
@@ -185,15 +147,15 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Size Flags" ]
 
-[node name="AnimatorsTitle" type="Label" parent="Scroll/VBoxContainer" index="4"]
+[node name="Creators" type="Label" parent="Scroll/VBoxContainer" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 451.0
-margin_right = 1260.0
-margin_bottom = 553.0
+margin_top = 122.0
+margin_right = 1248.0
+margin_bottom = 151.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -201,6 +163,95 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
+text = "Разработчики"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ModelersTitle" type="Label" parent="Scroll/VBoxContainer" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 155.0
+margin_right = 1248.0
+margin_bottom = 179.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Моделирование"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Size Flags", "custom_fonts" ]
+
+[node name="Modelers" type="Label" parent="Scroll/VBoxContainer" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 183.0
+margin_right = 1248.0
+margin_bottom = 664.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Абрамович Максим Викторович
+Алейников Владислав Сергеевич
+Главинский Иван Константинович
+Жизневский Владислав Станиславович
+Криницин Антон Владимирович
+Крошинский Станислав Александрович
+Радевич Алексей Сергеевич
+Региня Максим Андреевич
+Рогачевский Мартин Владимирович
+Рожков Дмитрий Николаевич
+Самаль Роман Олегович
+Тишук Виктор Михайлович
+Удовин Иван Анатольевич
+Урбан Денис Чеславович
+Федоров Алексей Сергеевич
+Федоров Евгений Андреевич
+Филиппович Вадим Вячеславович
+Чмуров Максим Витальевич
+Якусик Александр Казимирович
+Янкович Олег Валентинович
+Шишов Тимофей Александрович
+"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Size Flags" ]
+
+[node name="AnimatorsTitle" type="Label" parent="Scroll/VBoxContainer" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 668.0
+margin_right = 1248.0
+margin_bottom = 692.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "Анимации"
 align = 1
 percent_visible = 1.0
@@ -208,25 +259,74 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Size Flags", "custom_fonts" ]
 
-[node name="Animators" type="Label" parent="Scroll/VBoxContainer" index="5"]
+[node name="Animators" type="Label" parent="Scroll/VBoxContainer" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 557.0
-margin_right = 1260.0
-margin_bottom = 660.0
+margin_top = 696.0
+margin_right = 1248.0
+margin_bottom = 803.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Удовин Иван
-Чмуров Максим
-Филиппович Вадим
-Рожков Дмитрий"
+text = "Рожков Дмитрий Николаевич
+Удовин Иван Анатольевич
+Чмуров Максим Витальевич
+Филиппович Вадим Вячеславович
+"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Size Flags" ]
+
+[node name="DevelopersTitle" type="Label" parent="Scroll/VBoxContainer" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 807.0
+margin_right = 1248.0
+margin_bottom = 831.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Скрипты"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Developers" type="Label" parent="Scroll/VBoxContainer" index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 835.0
+margin_right = 1248.0
+margin_bottom = 920.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Криницин Антон Владимирович
+Рожков Дмитрий Николаевич
+Удовин Иван Анатольевич
+"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
