@@ -8,22 +8,27 @@ transform = Transform( -0.822373, 0, 0.568949, 0, 1, 0, -0.568949, 0, -0.822373,
 
 [node name="cabel-part39" type="Spatial" parent="." index="0" instance=ExtResource( 1 )]
 
-transform = Transform( -0.106527, 0.00251748, 0.994307, -0.00189188, 0.999994, -0.00273457, -0.994308, -0.00217242, -0.106522, -0.0480652, -0.0735154, 0.660782 )
+transform = Transform( 0.689558, 0.00328502, 0.217267, -0.00189188, 0.999993, -0.000820372, -0.724229, 0.0005155, 0.206868, 0.696716, -0.0752835, 1.5336 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="cabel-part42" type="Spatial" parent="." index="1" instance=ExtResource( 1 )]
+[node name="cabel-part43" type="Spatial" parent="." index="1" instance=ExtResource( 1 )]
 
-transform = Transform( -0.107202, 0.0584334, 0.992519, -0.0222215, 0.997881, -0.0611493, -0.993989, -0.0286106, -0.105676, -4.83792, -0.0735154, 1.16086 )
+transform = Transform( -0.106535, 0.00674, 0.994287, -0.00189184, 0.999973, -0.00698126, -0.994307, -0.00262477, -0.10652, -0.37738, -0.112762, 0.512115 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="cabel-part40" type="Spatial" parent="." index="2" instance=ExtResource( 1 )]
+[node name="cabel-part42" type="Spatial" parent="." index="2" instance=ExtResource( 1 )]
+
+transform = Transform( -0.107778, 0.0842873, 0.891536, -0.0221784, 0.995948, -0.0784402, -0.993928, -0.0313633, -0.0949246, -5.29437, -0.117902, 1.04179 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part40" type="Spatial" parent="." index="3" instance=ExtResource( 1 )]
 
 transform = Transform( -0.832125, 0.00495797, -0.554567, -0.0028269, 0.999909, 0.0131812, 0.554582, 0.0125361, -0.832035, 0.722748, -0.0749679, 1.53484 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="cabel-part41" type="Spatial" parent="." index="3" instance=ExtResource( 1 )]
+[node name="cabel-part41" type="Spatial" parent="." index="4" instance=ExtResource( 1 )]
 
-transform = Transform( -0.832125, 0.00495971, -0.554567, -0.00282685, 0.999909, 0.0131842, 0.554582, 0.0125386, -0.832035, 3.46552, -0.197889, 5.66327 )
+transform = Transform( -0.832159, 0.0170032, -0.554277, -0.00282538, 0.999387, 0.0348995, 0.554531, 0.030608, -0.831601, 3.47336, -0.182236, 5.65784 )
 _sections_unfolded = [ "Transform" ]
 
 
