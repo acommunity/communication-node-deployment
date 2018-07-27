@@ -12,7 +12,7 @@ var _stage = 1
 const PLAYERS = [
 	"Objects/CentralCommunication/AnimationPlayer",
 #	"Objects/PowerSupplier/AnimationPlayer",
-#	"Objects/Moss/AnimationPlayer",
+	"Objects/Moss/AnimationPlayer",
 	"Objects/R409/AnimationPlayer",
 	"Interface/AnimationPlayer",
 	"Cabels/AnimationPlayer"
