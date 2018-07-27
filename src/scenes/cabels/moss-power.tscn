@@ -4,6 +4,7 @@
 
 [node name="moss-power" type="Spatial"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.18384, 0.823524, -15.0726 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -90,6 +91,11 @@ _sections_unfolded = [ "Transform" ]
 [node name="cabel-part51" type="Spatial" parent="." index="16" instance=ExtResource( 1 )]
 
 transform = Transform( -0.223043, -0.0410257, 0.633064, -0.10665, 0.994143, 0.0113441, -0.968956, -0.0999791, -0.146973, 8.19112, -1.28477, -17.6423 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part56" type="Spatial" parent="." index="17" instance=ExtResource( 1 )]
+
+transform = Transform( -0.960983, 0.019438, -0.209701, -0.102661, 0.901216, 0.319987, 0.25685, 0.432935, -0.656684, -5.37912, 1.68911, -57.3588 )
 _sections_unfolded = [ "Transform" ]
 
 
