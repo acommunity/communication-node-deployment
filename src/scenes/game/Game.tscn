@@ -24,7 +24,7 @@
 [ext_resource path="res://scenes/cabels/409-ground.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/cabels/moss-ground.tscn" type="PackedScene" id=23]
 [ext_resource path="res://scenes/cabels/power-ground.tscn" type="PackedScene" id=24]
-[ext_resource path="res://scenes/cabels/part-types/ground.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/cabels/423-ground.tscn" type="PackedScene" id=25]
 
 [sub_resource type="PanoramaSky" id=1]
 
@@ -248,17 +248,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23962, 0.693003, -16.304 )
 
 [node name="power-ground" parent="cabels" index="8" instance=ExtResource( 24 )]
 
-[node name="423-ground" type="Spatial" parent="cabels" index="9"]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7347, 0, 7.27185 )
-
-[node name="cabel-part39" parent="cabels/423-ground" index="0" instance=ExtResource( 25 )]
-
-transform = Transform( 0.788777, -0.0193076, -0.614376, -0.0803784, 0.987684, -0.134234, 0.609402, 0.155264, 0.777511, -0.55722, 2.4987, 0.0991211 )
-
-[node name="cabel-part40" parent="cabels/423-ground" index="1" instance=ExtResource( 25 )]
-
-transform = Transform( -0.831056, 0.00795089, 0.556131, -0.00937851, 0.999555, -0.0283052, -0.556109, -0.0287389, -0.830612, -0.833893, 2.40447, 0.787048 )
+[node name="423-ground" parent="cabels" index="9" instance=ExtResource( 25 )]
 
 [connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
 
