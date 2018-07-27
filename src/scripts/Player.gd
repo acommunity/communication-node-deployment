@@ -84,10 +84,10 @@ func _process_normal_mode(direction, delta):
 	var acceleration = 1
 
 	if is_on_floor():
-		acceleration = 5
+		acceleration = 10
 
 		if direction.length() == 0 || direction.dot(_velocity) < 0:
-			acceleration = 15
+			acceleration = 25
 
 		if Input.is_action_just_pressed("jump"):
 			velocity_y = 4

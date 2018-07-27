@@ -6,8 +6,8 @@
 
 [sub_resource type="CapsuleShape" id=1]
 
-radius = 0.3
-height = 1.0
+radius = 0.25
+height = 0.95
 
 [node name="Player" type="KinematicBody" index="0"]
 
@@ -29,7 +29,7 @@ mode = null
 [node name="Head" type="Spatial" parent="." index="0"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Eyes" type="InterpolatedCamera" parent="Head" index="0"]
