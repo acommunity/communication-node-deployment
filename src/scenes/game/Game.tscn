@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/game/Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,11 @@
 [ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=14]
 [ext_resource path="res://media/sounds/in-game.wav" type="AudioStream" id=15]
 [ext_resource path="res://scenes/cabels/409-423.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/cabels/423-409direction.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/cabels/moss-power.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/cabels/power-423-krhs4x6.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/cabels/power-423-p274m.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/cabels/power-transformator.tscn" type="PackedScene" id=21]
 
 [sub_resource type="PanoramaSky" id=1]
 
@@ -216,6 +221,22 @@ doppler_tracking = 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 237.045, 4.00212, 261.196 )
 
 [node name="409-423" parent="cabels" index="0" instance=ExtResource( 16 )]
+
+[node name="423-409direction2" parent="cabels" index="1" instance=ExtResource( 17 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.7347, 0, -75.3057 )
+
+[node name="moss-power" parent="cabels" index="2" instance=ExtResource( 18 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.18384, 0.823524, -15.0726 )
+
+[node name="power-423-krhs4x6" parent="cabels" index="3" instance=ExtResource( 19 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23962, 0.693003, -16.304 )
+
+[node name="power-423-p274m" parent="cabels" index="4" instance=ExtResource( 20 )]
+
+[node name="power-transformator" parent="cabels" index="5" instance=ExtResource( 21 )]
 
 [connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
 
