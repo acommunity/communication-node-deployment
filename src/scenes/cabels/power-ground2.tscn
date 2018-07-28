@@ -4,7 +4,7 @@
 
 [node name="power-ground2" type="Spatial"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0901337, 0, -34.4859 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.178406, -0.00460148, -34.3829 )
 
 [node name="cabel-part58" type="Spatial" parent="." index="0" instance=ExtResource( 1 )]
 
