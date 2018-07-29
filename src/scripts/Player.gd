@@ -91,8 +91,9 @@ func _process_normal_mode(direction, delta):
 
 		if Input.is_action_just_pressed("jump"):
 			velocity_y = 4
-
-			get_node("Jump").play()
+			
+			# Change audio file
+			# get_node("Jump").play()
 
 		if direction.length() > 0:
 			_start_moving_sound(speed)
