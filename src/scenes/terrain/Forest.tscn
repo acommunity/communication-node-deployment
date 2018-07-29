@@ -8,1765 +8,588 @@
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 248.906, 0, 270.602 )
 
-[node name="chr_tree5" type="StaticBody" parent="." index="0" instance=ExtResource( 1 )]
+[node name="chr_tree5" parent="." index="0" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -23.5153, 1.83769, 52.9722 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree6" type="StaticBody" parent="." index="1" instance=ExtResource( 1 )]
+[node name="chr_tree6" parent="." index="1" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 14.9326, 1.82492, 56.7636 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree7" type="StaticBody" parent="." index="2" instance=ExtResource( 1 )]
+[node name="chr_tree7" parent="." index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 7.39468, 0.841735, 62.4762 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree8" type="StaticBody" parent="." index="3" instance=ExtResource( 1 )]
+[node name="chr_tree8" parent="." index="3" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 8.43466, 0.841735, 55.4039 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree9" type="StaticBody" parent="." index="4" instance=ExtResource( 1 )]
+[node name="chr_tree9" parent="." index="4" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -24.2989, 0.847627, 62.464 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree10" type="StaticBody" parent="." index="5" instance=ExtResource( 1 )]
+[node name="chr_tree10" parent="." index="5" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -28.9026, 6.10857, 56.9303 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree11" type="StaticBody" parent="." index="6" instance=ExtResource( 1 )]
+[node name="chr_tree11" parent="." index="6" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -34.1912, 3.39053, 55.922 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree12" type="StaticBody" parent="." index="7" instance=ExtResource( 1 )]
+[node name="chr_tree12" parent="." index="7" instance=ExtResource( 1 )]
 
 transform = Transform( 0.31619, 0, 1.49239, 0, 1.52551, 0, -1.49239, 0, 0.31619, -36.4915, 5.31076, 61.5737 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree13" type="StaticBody" parent="." index="8" instance=ExtResource( 1 )]
+[node name="chr_tree13" parent="." index="8" instance=ExtResource( 1 )]
 
 transform = Transform( 0.31619, 0, 1.49239, 0, 1.52551, 0, -1.49239, 0, 0.31619, -42.0311, 5.31076, 50.351 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree17" type="StaticBody" parent="." index="9" instance=ExtResource( 1 )]
+[node name="chr_tree17" parent="." index="9" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -21.3619, 3.63133, 20.1328 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree18" type="StaticBody" parent="." index="10" instance=ExtResource( 1 )]
+[node name="chr_tree18" parent="." index="10" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -22.1456, 3.14003, 29.6247 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree19" type="StaticBody" parent="." index="11" instance=ExtResource( 1 )]
+[node name="chr_tree19" parent="." index="11" instance=ExtResource( 1 )]
 
 transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -26.7493, 3.44171, 24.091 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree22" type="StaticBody" parent="." index="12" instance=ExtResource( 1 )]
+[node name="chr_tree22" parent="." index="12" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -9.5761, 1.82492, 55.975 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree23" type="StaticBody" parent="." index="13" instance=ExtResource( 1 )]
+[node name="chr_tree23" parent="." index="13" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -17.114, 0.841735, 61.6876 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree24" type="StaticBody" parent="." index="14" instance=ExtResource( 1 )]
+[node name="chr_tree24" parent="." index="14" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -16.074, 0.841735, 54.6154 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree25" type="StaticBody" parent="." index="15" instance=ExtResource( 1 )]
+[node name="chr_tree25" parent="." index="15" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.67853, 2.45092, 29.4891 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree26" type="StaticBody" parent="." index="16" instance=ExtResource( 1 )]
+[node name="chr_tree26" parent="." index="16" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.14063, 3.41352, 35.2017 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree27" type="StaticBody" parent="." index="17" instance=ExtResource( 1 )]
+[node name="chr_tree27" parent="." index="17" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 3.1806, 3.63266, 28.1295 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree28" type="StaticBody" parent="." index="18" instance=ExtResource( 1 )]
+[node name="chr_tree28" parent="." index="18" instance=ExtResource( 1 )]
 
 transform = Transform( 1.12174, 0, 0.6454, 0, 1.29416, 0, -0.6454, 0, 1.12174, 4.54092, 5.38389, 25.4987 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree29" type="StaticBody" parent="." index="19" instance=ExtResource( 1 )]
+[node name="chr_tree29" parent="." index="19" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 9.79373, 5.26625, 40.6768 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree30" type="StaticBody" parent="." index="20" instance=ExtResource( 1 )]
+[node name="chr_tree30" parent="." index="20" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 2.25584, 4.28306, 46.3894 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree31" type="StaticBody" parent="." index="21" instance=ExtResource( 1 )]
+[node name="chr_tree31" parent="." index="21" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, 3.29582, 3.48467, 39.3171 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree32" type="StaticBody" parent="." index="22" instance=ExtResource( 1 )]
+[node name="chr_tree32" parent="." index="22" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -23.3099, 5.26625, 3.22827 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree33" type="StaticBody" parent="." index="23" instance=ExtResource( 1 )]
+[node name="chr_tree33" parent="." index="23" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -30.8478, 4.28306, 8.94083 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree34" type="StaticBody" parent="." index="24" instance=ExtResource( 1 )]
+[node name="chr_tree34" parent="." index="24" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -29.8078, 4.28306, 1.86859 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree35" type="StaticBody" parent="." index="25" instance=ExtResource( 1 )]
+[node name="chr_tree35" parent="." index="25" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -23.2959, 2.94885, 3.2392 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree36" type="StaticBody" parent="." index="26" instance=ExtResource( 1 )]
+[node name="chr_tree36" parent="." index="26" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -30.8478, 3.0257, 8.94083 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree37" type="StaticBody" parent="." index="27" instance=ExtResource( 1 )]
+[node name="chr_tree37" parent="." index="27" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -29.8078, 3.0206, 1.86859 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree38" type="StaticBody" parent="." index="28" instance=ExtResource( 1 )]
+[node name="chr_tree38" parent="." index="28" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -21.1365, 1.68291, -14.1775 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree39" type="StaticBody" parent="." index="29" instance=ExtResource( 1 )]
+[node name="chr_tree39" parent="." index="29" instance=ExtResource( 1 )]
 
 transform = Transform( 0.337007, 0, 2.62633, 0, 2.64786, 0, -2.62633, 0, 0.337007, -20.0965, 2.49406, -21.2498 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree40" type="StaticBody" parent="." index="30" instance=ExtResource( 1 )]
+[node name="chr_tree40" parent="." index="30" instance=ExtResource( 1 )]
 
 transform = Transform( -1.00652, -0.0230634, -1.61878, -0.252382, 1.88506, 0.130069, 1.59915, 0.282989, -0.998349, 0.283325, 3.37679, -30.4109 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree41" type="StaticBody" parent="." index="31" instance=ExtResource( 1 )]
+[node name="chr_tree41" parent="." index="31" instance=ExtResource( 1 )]
 
 transform = Transform( 1.65235, 0, 0.950685, 0, 1.90632, 0, -0.950685, 0, 1.65235, -6.82193, 2.16042, -24.8044 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree42" type="StaticBody" parent="." index="32" instance=ExtResource( 1 )]
+[node name="chr_tree42" parent="." index="32" instance=ExtResource( 1 )]
 
 transform = Transform( -0.444976, 0.151581, 1.84745, -0.0118413, 1.89966, -0.158717, -1.85362, -0.0485236, -0.442481, -7.97943, 2.70203, -32.0566 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree43" type="StaticBody" parent="." index="33" instance=ExtResource( 1 )]
+[node name="chr_tree43" parent="." index="33" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 1.33305, 5.26625, -22.3785 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree44" type="StaticBody" parent="." index="34" instance=ExtResource( 1 )]
+[node name="chr_tree44" parent="." index="34" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -3.82712, 4.28306, -14.4522 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree45" type="StaticBody" parent="." index="35" instance=ExtResource( 1 )]
+[node name="chr_tree45" parent="." index="35" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -5.24162, 4.28306, -21.4592 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree46" type="StaticBody" parent="." index="36" instance=ExtResource( 1 )]
+[node name="chr_tree46" parent="." index="36" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 1.33305, 5.26625, -22.3785 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree47" type="StaticBody" parent="." index="37" instance=ExtResource( 1 )]
+[node name="chr_tree47" parent="." index="37" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -8.04298, 4.28306, -15.5092 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree48" type="StaticBody" parent="." index="38" instance=ExtResource( 1 )]
+[node name="chr_tree48" parent="." index="38" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -5.24162, 4.28306, -21.4592 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree50" type="StaticBody" parent="." index="39" instance=ExtResource( 1 )]
+[node name="chr_tree50" parent="." index="39" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -31.7374, 2.98804, -55.838 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree51" type="StaticBody" parent="." index="40" instance=ExtResource( 1 )]
+[node name="chr_tree51" parent="." index="40" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -33.3807, 1.83628, -62.845 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree52" type="StaticBody" parent="." index="41" instance=ExtResource( 1 )]
+[node name="chr_tree52" parent="." index="41" instance=ExtResource( 1 )]
 
 transform = Transform( 1.22845, 0.166753, 1.44816, -0.107871, 1.89901, -0.127163, -1.45373, 2.98023e-08, 1.23318, -4.87088, 3.80259, -69.0135 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree53" type="StaticBody" parent="." index="42" instance=ExtResource( 1 )]
+[node name="chr_tree53" parent="." index="42" instance=ExtResource( 1 )]
 
 transform = Transform( 1.47786, 0, 1.74218, 0, 2.28458, 0, -1.74218, 0, 1.47786, -10.031, 0.841542, -61.0872 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree54" type="StaticBody" parent="." index="43" instance=ExtResource( 1 )]
+[node name="chr_tree54" parent="." index="43" instance=ExtResource( 1 )]
 
 transform = Transform( -2.20616, -0.268315, -0.118266, -0.269575, 2.20911, 0.0167975, 0.115366, 0.0309763, -2.22235, -11.4456, 2.95152, -68.0944 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree55" type="StaticBody" parent="." index="44" instance=ExtResource( 1 )]
+[node name="chr_tree55" parent="." index="44" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -33.7715, 1.71714, -24.5192 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree56" type="StaticBody" parent="." index="45" instance=ExtResource( 1 )]
+[node name="chr_tree56" parent="." index="45" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -38.9316, 1.39007, -16.5929 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree57" type="StaticBody" parent="." index="46" instance=ExtResource( 1 )]
+[node name="chr_tree57" parent="." index="46" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -40.3462, 1.39007, -23.5999 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree58" type="StaticBody" parent="." index="47" instance=ExtResource( 1 )]
+[node name="chr_tree58" parent="." index="47" instance=ExtResource( 1 )]
 
 transform = Transform( 1.08295, 0, 1.9722, 0, 2.24996, 0, -1.9722, 0, 1.08295, -26.1223, 1.7267, -11.4485 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree59" type="StaticBody" parent="." index="48" instance=ExtResource( 1 )]
+[node name="chr_tree59" parent="." index="48" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -31.2824, 2.85261, -3.52225 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree60" type="StaticBody" parent="." index="49" instance=ExtResource( 1 )]
+[node name="chr_tree60" parent="." index="49" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -32.697, 2.85261, -10.5292 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree61" type="StaticBody" parent="." index="50" instance=ExtResource( 1 )]
+[node name="chr_tree61" parent="." index="50" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 28.8294, 5.39472, -78.2541 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree62" type="StaticBody" parent="." index="51" instance=ExtResource( 1 )]
+[node name="chr_tree62" parent="." index="51" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 23.6693, 4.44773, -70.3278 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree63" type="StaticBody" parent="." index="52" instance=ExtResource( 1 )]
+[node name="chr_tree63" parent="." index="52" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 22.2548, 5.90281, -77.3349 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree64" type="StaticBody" parent="." index="53" instance=ExtResource( 1 )]
+[node name="chr_tree64" parent="." index="53" instance=ExtResource( 1 )]
 
 transform = Transform( 0.805909, 5.58794e-09, 0.95005, -0.0723402, 1.24221, 0.0613648, -0.947292, -0.0948619, 0.80357, -26.1868, 3.68227, -84.8462 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree65" type="StaticBody" parent="." index="54" instance=ExtResource( 1 )]
+[node name="chr_tree65" parent="." index="54" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -29.3678, 2.85262, -75.9063 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree73" type="StaticBody" parent="." index="55" instance=ExtResource( 1 )]
+[node name="chr_tree73" parent="." index="55" instance=ExtResource( 1 )]
 
 transform = Transform( -1.77853, 0, -0.686221, 0, 1.90632, 0, 0.686221, 0, -1.77853, 12.4839, 0.142181, -64.3723 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree74" type="StaticBody" parent="." index="56" instance=ExtResource( 1 )]
+[node name="chr_tree74" parent="." index="56" instance=ExtResource( 1 )]
 
 transform = Transform( -1.62561, 0, -0.995725, 0, 1.90632, 0, 0.995725, 0, -1.62561, -32.9519, 0.597197, -94.9142 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree66" type="StaticBody" parent="." index="57" instance=ExtResource( 1 )]
+[node name="chr_tree66" parent="." index="57" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -32.7614, 2.85262, -83.9269 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree67" type="StaticBody" parent="." index="58" instance=ExtResource( 1 )]
+[node name="chr_tree67" parent="." index="58" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -44.1497, 3.1797, -83.3293 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree68" type="StaticBody" parent="." index="59" instance=ExtResource( 1 )]
+[node name="chr_tree68" parent="." index="59" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -49.3098, 2.85262, -75.403 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree69" type="StaticBody" parent="." index="60" instance=ExtResource( 1 )]
+[node name="chr_tree69" parent="." index="60" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -50.7244, 2.85262, -82.41 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree70" type="StaticBody" parent="." index="61" instance=ExtResource( 1 )]
+[node name="chr_tree70" parent="." index="61" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -43.4559, 3.1797, -103.45 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree71" type="StaticBody" parent="." index="62" instance=ExtResource( 1 )]
+[node name="chr_tree71" parent="." index="62" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -48.6161, 2.85262, -95.5241 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree72" type="StaticBody" parent="." index="63" instance=ExtResource( 1 )]
+[node name="chr_tree72" parent="." index="63" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -50.0306, 2.85262, -102.531 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree155" type="StaticBody" parent="." index="64" instance=ExtResource( 1 )]
+[node name="chr_tree155" parent="." index="64" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 22.7012, -0.678887, -145.649 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree156" type="StaticBody" parent="." index="65" instance=ExtResource( 1 )]
+[node name="chr_tree156" parent="." index="65" instance=ExtResource( 1 )]
 
 transform = Transform( 0.572591, 0, 1.4033, 0, 1.51562, 0, -1.4033, 0, 0.572591, 22.0193, -0.183595, -169.108 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree157" type="StaticBody" parent="." index="66" instance=ExtResource( 1 )]
+[node name="chr_tree157" parent="." index="66" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 18.3965, 0.529809, -161.491 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree158" type="StaticBody" parent="." index="67" instance=ExtResource( 1 )]
+[node name="chr_tree158" parent="." index="67" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 15.521, -0.229986, -166.569 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree159" type="StaticBody" parent="." index="68" instance=ExtResource( 1 )]
+[node name="chr_tree159" parent="." index="68" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 12.6257, 0.359816, -173.639 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree160" type="StaticBody" parent="." index="69" instance=ExtResource( 1 )]
+[node name="chr_tree160" parent="." index="69" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 10.6333, 0.580503, -166.179 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree161" type="StaticBody" parent="." index="70" instance=ExtResource( 1 )]
+[node name="chr_tree161" parent="." index="70" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 7.75775, -0.361555, -171.257 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree162" type="StaticBody" parent="." index="71" instance=ExtResource( 1 )]
+[node name="chr_tree162" parent="." index="71" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, -8.37077, -5.34827, -174.8 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree163" type="StaticBody" parent="." index="72" instance=ExtResource( 1 )]
+[node name="chr_tree163" parent="." index="72" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, -10.3631, -1.47455, -167.34 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree164" type="StaticBody" parent="." index="73" instance=ExtResource( 1 )]
+[node name="chr_tree164" parent="." index="73" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, -13.2387, 0.628808, -172.418 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree165" type="StaticBody" parent="." index="74" instance=ExtResource( 1 )]
+[node name="chr_tree165" parent="." index="74" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 3.26572, -1.01679, -173.639 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree166" type="StaticBody" parent="." index="75" instance=ExtResource( 1 )]
+[node name="chr_tree166" parent="." index="75" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, 1.27333, 0.979463, -166.179 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree167" type="StaticBody" parent="." index="76" instance=ExtResource( 1 )]
+[node name="chr_tree167" parent="." index="76" instance=ExtResource( 1 )]
 
 transform = Transform( 0.58792, 0, 1.44087, 0, 1.5562, 0, -1.44087, 0, 0.58792, -1.60226, -3.04077, -171.257 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree168" type="StaticBody" parent="." index="77" instance=ExtResource( 1 )]
+[node name="chr_tree168" parent="." index="77" instance=ExtResource( 1 )]
 
 transform = Transform( 1.22592, 0.206468, 1.44518, -0.260333, 1.88783, -0.0488721, -1.43645, -0.16593, 1.24223, -29.1027, 2.93601, -106.693 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree169" type="StaticBody" parent="." index="78" instance=ExtResource( 1 )]
+[node name="chr_tree169" parent="." index="78" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -34.2715, 2.85262, -98.7621 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree170" type="StaticBody" parent="." index="79" instance=ExtResource( 1 )]
+[node name="chr_tree170" parent="." index="79" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -35.6861, 2.85262, -105.769 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree171" type="StaticBody" parent="." index="80" instance=ExtResource( 1 )]
+[node name="chr_tree171" parent="." index="80" instance=ExtResource( 1 )]
 
 transform = Transform( 0.367387, 0.163037, 1.86347, -0.0315362, 1.89934, -0.159958, -1.87032, 7.45058e-09, 0.368738, -28.9871, -2.20991, -121.14 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree172" type="StaticBody" parent="." index="81" instance=ExtResource( 1 )]
+[node name="chr_tree172" parent="." index="81" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -34.1472, 0.0390613, -113.214 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree173" type="StaticBody" parent="." index="82" instance=ExtResource( 1 )]
+[node name="chr_tree173" parent="." index="82" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -35.5202, -1.61676, -120.326 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree84" type="StaticBody" parent="." index="83" instance=ExtResource( 1 )]
+[node name="chr_tree84" parent="." index="83" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 16.7563, -0.230431, -144.467 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree85" type="StaticBody" parent="." index="84" instance=ExtResource( 1 )]
+[node name="chr_tree85" parent="." index="84" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 11.5961, 1.1873, -136.541 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree86" type="StaticBody" parent="." index="85" instance=ExtResource( 1 )]
+[node name="chr_tree86" parent="." index="85" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 10.1816, 3.87898, -143.548 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree79" type="StaticBody" parent="." index="86" instance=ExtResource( 1 )]
+[node name="chr_tree79" parent="." index="86" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 22.9638, 4.24553, -63.929 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree80" type="StaticBody" parent="." index="87" instance=ExtResource( 1 )]
+[node name="chr_tree80" parent="." index="87" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 17.713, 0.117483, -56.3311 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree81" type="StaticBody" parent="." index="88" instance=ExtResource( 1 )]
+[node name="chr_tree81" parent="." index="88" instance=ExtResource( 1 )]
 
 transform = Transform( 1.49514, 0, 1.76255, 0, 2.31128, 0, -1.76255, 0, 1.49514, 11.1731, 0.117483, -51.5285 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree82" type="StaticBody" parent="." index="89" instance=ExtResource( 1 )]
+[node name="chr_tree82" parent="." index="89" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 5.62813, 2.9249, -58.3532 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree83" type="StaticBody" parent="." index="90" instance=ExtResource( 1 )]
+[node name="chr_tree83" parent="." index="90" instance=ExtResource( 1 )]
 
 transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 16.3891, 3.07931, -63.0096 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree76" type="StaticBody" parent="." index="91" instance=ExtResource( 1 )]
+[node name="chr_tree76" parent="." index="91" instance=ExtResource( 1 )]
 
 transform = Transform( 0.985447, 0, 1.63186, 0, 1.90632, 0, -1.63186, 0, 0.985447, 1.61531, 1.82492, 52.7592 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree77" type="StaticBody" parent="." index="92" instance=ExtResource( 1 )]
+[node name="chr_tree77" parent="." index="92" instance=ExtResource( 1 )]
 
 transform = Transform( 0.985447, 0, 1.63186, 0, 1.90632, 0, -1.63186, 0, 0.985447, -2.21416, 0.841735, 61.4072 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chr_tree78" type="StaticBody" parent="." index="93" instance=ExtResource( 1 )]
+[node name="chr_tree78" parent="." index="93" instance=ExtResource( 1 )]
 
 transform = Transform( 0.985447, 0, 1.63186, 0, 1.90632, 0, -1.63186, 0, 0.985447, -4.72847, 0.841735, 54.7157 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" type="StaticBody" parent="." index="94" instance=ExtResource( 2 )]
+[node name="Scene Root" parent="." index="94" instance=ExtResource( 2 )]
 
 transform = Transform( -0.653959, 0.0104659, -0.756458, 0.0105703, 0.999933, 0.00469643, 0.756456, -0.00492473, -0.654026, 24.4162, 5.58437, -79.6539 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="." index="95" instance=ExtResource( 2 )]
+[node name="Scene Root3" parent="." index="95" instance=ExtResource( 2 )]
 
 transform = Transform( -0.381403, 0.0108452, -1.45066, 0.0158555, 1.4999, 0.00704464, 1.45061, -0.0135427, -0.381492, -7.8243, -0.44868, -59.3463 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root6" type="StaticBody" parent="." index="96" instance=ExtResource( 2 )]
+[node name="Scene Root6" parent="." index="96" instance=ExtResource( 2 )]
 
 transform = Transform( -0.381403, 0.0108452, -1.45066, 0.0158555, 1.4999, 0.00704464, 1.45061, -0.0135427, -0.381492, -14.1351, -0.498841, -63.4496 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root2" type="StaticBody" parent="." index="97" instance=ExtResource( 2 )]
+[node name="Scene Root2" parent="." index="97" instance=ExtResource( 2 )]
 
 transform = Transform( 0.447915, -0.00660967, 0.39916, 0.00634219, 0.59996, 0.00281786, -0.399164, 0.00211564, 0.447955, 22.2573, 5.58437, -79.3394 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root4" type="StaticBody" parent="." index="98" instance=ExtResource( 2 )]
+[node name="Scene Root4" parent="." index="98" instance=ExtResource( 2 )]
 
 transform = Transform( 0.755039, -0.0166796, 1.85193, 0.0211406, 1.99987, 0.00939285, -1.85188, 0.0160295, 0.755165, -3.79021, 0.886458, -52.6926 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4" index="2" instance=ExtResource( 2 )]
+[node name="Scene Root3" parent="Scene Root4" index="2" instance=ExtResource( 2 )]
 
 transform = Transform( 1, 5.12227e-09, 2.08616e-07, -4.65661e-10, 1, 2.09548e-09, -2.98023e-08, 1.00117e-08, 0.999999, -48.467, 1.00698, -5.3851 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root7" type="StaticBody" parent="Scene Root4" index="3" instance=ExtResource( 2 )]
+[node name="Scene Root7" parent="Scene Root4" index="3" instance=ExtResource( 2 )]
 
 transform = Transform( -0.999623, 0.0212197, -0.0173843, 0.0210555, 0.999732, 0.00957632, 0.0175826, 0.00920668, -0.999802, -50.1903, 0.960914, 8.30124 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root14" type="StaticBody" parent="Scene Root4" index="4" instance=ExtResource( 2 )]
+[node name="Scene Root14" parent="Scene Root4" index="4" instance=ExtResource( 2 )]
 
 transform = Transform( -0.35235, 0.0186904, -0.93568, 0.00990043, 0.999819, 0.0162433, 0.935815, -0.00354032, -0.352471, -34.6544, 0.763772, 15.3085 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root19" type="StaticBody" parent="Scene Root4" index="5" instance=ExtResource( 2 )]
+[node name="Scene Root19" parent="Scene Root4" index="5" instance=ExtResource( 2 )]
 
 transform = Transform( 0.999901, 6.65989e-05, -0.0139565, -6.45183e-05, 0.999998, 0.000148008, 0.0139564, -0.000147076, 0.9999, -19.0919, 1.1851, 6.72922 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root5" type="StaticBody" parent="Scene Root4" index="6" instance=ExtResource( 2 )]
+[node name="Scene Root5" parent="Scene Root4" index="6" instance=ExtResource( 2 )]
 
 transform = Transform( 0.768, 0.0433621, 0.638979, -0.0807422, 0.996301, 0.0294349, -0.635339, -0.0741987, 0.768659, -54.1044, 1.58961, -3.08141 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root10" type="StaticBody" parent="Scene Root4" index="7" instance=ExtResource( 2 )]
+[node name="Scene Root10" parent="Scene Root4" index="7" instance=ExtResource( 2 )]
 
 transform = Transform( -0.758379, -0.0209147, -0.651477, -0.0706342, 0.996236, 0.050242, 0.647974, 0.0841191, -0.757001, -42.8683, 1.43556, 4.42793 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root11" type="StaticBody" parent="Scene Root4" index="8" instance=ExtResource( 2 )]
+[node name="Scene Root11" parent="Scene Root4" index="8" instance=ExtResource( 2 )]
 
 transform = Transform( 0.322361, 0.0727689, -0.943814, -0.083444, 0.995344, 0.0482413, 0.94293, 0.0632046, 0.326933, -35.5312, 1.34378, 7.45644 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root18" type="StaticBody" parent="Scene Root4" index="9" instance=ExtResource( 2 )]
+[node name="Scene Root18" parent="Scene Root4" index="9" instance=ExtResource( 2 )]
 
 transform = Transform( 0.993718, 0.0887353, -0.0681646, -0.0864459, 0.995611, 0.0358375, 0.0710454, -0.0297199, 0.997028, -25.7482, 1.80716, 2.93142 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root20" type="StaticBody" parent="Scene Root4" index="10" instance=ExtResource( 2 )]
+[node name="Scene Root20" parent="Scene Root4" index="10" instance=ExtResource( 2 )]
 
 transform = Transform( -0.732879, -0.13397, -0.667036, -0.187303, 0.982264, 0.00851043, 0.654067, 0.131175, -0.744974, -5.82936, 0.408172, -15.6154 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root22" type="StaticBody" parent="Scene Root4" index="11" instance=ExtResource( 2 )]
+[node name="Scene Root22" parent="Scene Root4" index="11" instance=ExtResource( 2 )]
 
 transform = Transform( -0.970214, 0.115567, 0.212898, 0.142105, 0.983281, 0.11385, -0.196182, 0.140713, -0.970416, -17.5226, 0.459454, -10.1833 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root25" type="StaticBody" parent="Scene Root4" index="12" instance=ExtResource( 2 )]
+[node name="Scene Root25" parent="Scene Root4" index="12" instance=ExtResource( 2 )]
 
 transform = Transform( -0.977665, 0.156538, -0.140225, 0.140529, 0.983061, 0.117642, 0.156265, 0.0953089, -0.983103, -16.4237, -0.551458, -2.54942 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root4" type="StaticBody" parent="Scene Root4" index="13" instance=ExtResource( 2 )]
+[node name="Scene Root4" parent="Scene Root4" index="13" instance=ExtResource( 2 )]
 
 transform = Transform( 0.82588, -0.0645629, 0.560135, 0.0717983, 0.997378, 0.00909904, -0.559254, 0.0327021, 0.82835, -46.8758, 0.872744, -1.4803 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root4" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root4" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999981, -0.00639068, -2.00123e-05, 0.0063907, 0.99998, 0.0013498, 1.13249e-05, -0.00134991, 1, -1.01762, 0.0585865, -2.26791 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root9" type="StaticBody" parent="Scene Root4" index="14" instance=ExtResource( 2 )]
+[node name="Scene Root9" parent="Scene Root4" index="14" instance=ExtResource( 2 )]
 
 transform = Transform( -0.814324, 0.0851341, -0.574132, 0.0838128, 0.996064, 0.0288231, 0.574326, -0.0246483, -0.818255, -51.8515, 0.89761, 4.42393 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root9" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root9" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999981, -0.00639068, -2.00123e-05, 0.0063907, 0.99998, 0.0013498, 1.13249e-05, -0.00134991, 1, -1.01762, 0.0585865, -2.26791 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root13" type="StaticBody" parent="Scene Root4" index="15" instance=ExtResource( 2 )]
+[node name="Scene Root13" parent="Scene Root4" index="15" instance=ExtResource( 2 )]
 
 transform = Transform( 0.233626, 0.0107914, -0.972265, 0.0708778, 0.997089, 0.0280981, 0.969739, -0.0754765, 0.232182, -38.8712, 0.708741, 15.4217 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root13" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root13" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999981, -0.00639068, -2.00123e-05, 0.0063907, 0.99998, 0.0013498, 1.13249e-05, -0.00134991, 1, -1.01762, 0.0585865, -2.26791 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root16" type="StaticBody" parent="Scene Root4" index="16" instance=ExtResource( 2 )]
+[node name="Scene Root16" parent="Scene Root4" index="16" instance=ExtResource( 2 )]
 
 transform = Transform( 0.833609, -0.0649465, 0.54852, 0.0716622, 0.997387, 0.00918546, -0.547683, 0.0316511, 0.836085, -17.5554, 1.05134, 10.6559 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root16" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root16" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999981, -0.00639068, -2.00123e-05, 0.0063907, 0.99998, 0.0013498, 1.13249e-05, -0.00134991, 1, -1.01762, 0.0585865, -2.26791 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root15" type="StaticBody" parent="Scene Root4" index="17" instance=ExtResource( 2 )]
+[node name="Scene Root15" parent="Scene Root4" index="17" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.142805, 0.0405248, -0.98892, 0.0747763, 0.996747, 0.0300474, 0.986921, -0.0696569, -0.14537, -45.5812, 0.756417, 20.3732 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root15" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root15" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999981, -0.00639068, -2.00123e-05, 0.0063907, 0.99998, 0.0013498, 1.13249e-05, -0.00134991, 1, -1.01762, 0.0585865, -2.26791 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root6" type="StaticBody" parent="Scene Root4" index="18" instance=ExtResource( 2 )]
+[node name="Scene Root6" parent="Scene Root4" index="18" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( 0.822223, 0.102951, 0.559776, -0.105202, 0.994048, -0.0282955, -0.559357, -0.0356242, 0.82816, -52.5087, 1.89282, 0.825417 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root6" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root6" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root8" type="StaticBody" parent="Scene Root4" index="19" instance=ExtResource( 2 )]
+[node name="Scene Root8" parent="Scene Root4" index="19" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.814421, -0.0811999, -0.574562, -0.0932178, 0.995608, -0.00857085, 0.572735, 0.0465792, -0.818415, -46.2392, 1.82089, 2.029 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root8" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root8" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root12" type="StaticBody" parent="Scene Root4" index="20" instance=ExtResource( 2 )]
+[node name="Scene Root12" parent="Scene Root4" index="20" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( 0.231703, 0.0156371, -0.972659, -0.106128, 0.994308, -0.0092963, 0.966978, 0.105381, 0.232044, -39.7434, 1.72619, 7.57161 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root12" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root12" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root17" type="StaticBody" parent="Scene Root4" index="21" instance=ExtResource( 2 )]
+[node name="Scene Root17" parent="Scene Root4" index="21" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( 0.980343, 0.105203, -0.166898, -0.110268, 0.993672, -0.0213539, 0.163594, 0.0393379, 0.985741, -27.2888, 2.14343, 6.8576 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root17" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root17" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root21" type="StaticBody" parent="Scene Root4" index="22" instance=ExtResource( 2 )]
+[node name="Scene Root21" parent="Scene Root4" index="22" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.78735, -0.194476, -0.585025, -0.21281, 0.976348, -0.0381514, 0.578608, 0.094461, -0.810114, -7.59877, -0.0128475, -19.4497 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root21" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root21" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root26" type="StaticBody" parent="Scene Root4" index="23" instance=ExtResource( 2 )]
+[node name="Scene Root26" parent="Scene Root4" index="23" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.111558, 0.0348973, 0.993142, -0.212677, 0.97539, -0.0581629, -0.97073, -0.217708, -0.10139, -0.665012, -0.36151, -13.9561 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root26" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root26" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root27" type="StaticBody" parent="Scene Root4" index="24" instance=ExtResource( 2 )]
+[node name="Scene Root27" parent="Scene Root4" index="24" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.62704, -0.0914537, 0.773596, -0.208261, 0.976617, -0.0533526, -0.750626, -0.194565, -0.631425, 3.96659, 1.17192, -16.4803 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root27" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root27" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root28" type="StaticBody" parent="Scene Root4" index="25" instance=ExtResource( 2 )]
+[node name="Scene Root28" parent="Scene Root4" index="25" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( 0.187468, 0.00433995, -0.982258, -0.224888, 0.973619, -0.0386189, 0.956176, 0.228139, 0.183498, 10.9216, -0.362562, 6.01426 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root28" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root28" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.28978e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107063, -0.553757, -2.54743 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root29" type="StaticBody" parent="Scene Root4" index="26" instance=ExtResource( 2 )]
+[node name="Scene Root29" parent="Scene Root4" index="26" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( 0.35698, 0.0447549, -0.933036, -0.226445, 0.973204, -0.0399567, 0.906244, 0.225546, 0.357549, 16.5712, -0.0667601, -21.2389 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root29" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root29" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.28978e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107063, -0.553757, -2.54743 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root23" type="StaticBody" parent="Scene Root4" index="27" instance=ExtResource( 2 )]
+[node name="Scene Root23" parent="Scene Root4" index="27" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.949234, 0.10888, 0.295116, 0.124763, 0.991552, 0.035474, -0.28876, 0.070493, -0.9548, -15.4243, -0.349915, -13.8383 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root23" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root23" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root24" type="StaticBody" parent="Scene Root4" index="28" instance=ExtResource( 2 )]
+[node name="Scene Root24" parent="Scene Root4" index="28" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform = Transform( -0.990388, 0.125696, -0.0576635, 0.12355, 0.991555, 0.039404, 0.0621301, 0.0319012, -0.997555, -15.7238, -0.177191, -6.70531 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Scene Root3" type="StaticBody" parent="Scene Root4/Scene Root24" index="2" instance=ExtResource( 1 )]
+[node name="Scene Root3" parent="Scene Root4/Scene Root24" index="2" instance=ExtResource( 1 )]
 
 transform = Transform( 0.999253, 0.0386707, -6.29425e-05, -0.0386701, 0.99922, -0.00816987, -0.000253424, 0.00816619, 0.999967, 0.107067, -0.553758, -2.54742 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root5" type="StaticBody" parent="." index="99" instance=ExtResource( 2 )]
+[node name="Scene Root5" parent="." index="99" instance=ExtResource( 2 )]
 
 transform = Transform( -1.93044, -0.325137, -0.409508, -0.31907, 1.97339, -0.0627011, 0.414253, 0.00481067, -1.95662, 9.31604, 0.910866, -57.8006 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
-collision_mask = 1
-friction = 1.0
-bounce = 0.0
-constant_linear_velocity = Vector3( 0, 0, 0 )
-constant_angular_velocity = Vector3( 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
 
 
