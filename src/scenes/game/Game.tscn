@@ -302,6 +302,8 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="Objects" type="Node" parent="." index="2"]
 
+editor/display_folded = true
+
 [node name="CentralCommunication" parent="Objects" index="0" instance=ExtResource( 3 )]
 
 transform = Transform( 0.858806, 0.0125253, -0.512147, -0.000206474, 0.999709, 0.024103, 0.5123, -0.0205941, 0.858559, 261.774, 8.14084, 271.158 )
@@ -330,39 +332,51 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 237.045, 4.00212, 261.196 )
 
 [node name="409-423" parent="Cabels" index="0" instance=ExtResource( 8 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="423-409direction2" parent="Cabels" index="1" instance=ExtResource( 9 )]
 
+visible = false
+
 [node name="moss-power" parent="Cabels" index="2" instance=ExtResource( 10 )]
+
+visible = false
 
 [node name="power-423-krhs4x6" parent="Cabels" index="3" instance=ExtResource( 11 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23962, 1.1784, -16.304 )
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="power-423-p274m" parent="Cabels" index="4" instance=ExtResource( 12 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="power-transformator" parent="Cabels" index="5" instance=ExtResource( 13 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="409-ground" parent="Cabels" index="6" instance=ExtResource( 14 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="moss-ground" parent="Cabels" index="7" instance=ExtResource( 15 )]
 
+visible = false
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="power-ground" parent="Cabels" index="8" instance=ExtResource( 16 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="423-ground" parent="Cabels" index="9" instance=ExtResource( 17 )]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Cabels" index="10"]
