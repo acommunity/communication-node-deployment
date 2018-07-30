@@ -1,0 +1,116 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/cabels/part-types/krhs4x12.tscn" type="PackedScene" id=1]
+
+[node name="power-transformator2" type="Spatial"]
+
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71582, 0.449563, -13.9767 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="cabel-part56" type="Spatial" parent="." index="0" instance=ExtResource( 1 )]
+
+transform = Transform( 0.933006, 0.0573162, 0.021316, -0.00504863, 0.989222, -0.00878013, -0.359825, 0.134738, 0.0553944, 8.14134, 0.795284, -21.509 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="cabel-part58" type="Spatial" parent="." index="1" instance=ExtResource( 1 )]
+
+transform = Transform( 0.906767, 0.367543, 0.00619819, -0.0159204, 0.519511, -0.0256295, -0.421332, 0.771375, 0.0143078, 8.16302, 0.726473, -21.4578 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="cabel-part40" type="Spatial" parent="." index="2" instance=ExtResource( 1 )]
+
+transform = Transform( -0.54064, -0.0827649, 0.745083, 0.0103044, 0.994422, 0.0934192, -0.841191, 0.0653751, -0.477726, 3.00638, -2.25474, -11.8071 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part54" type="Spatial" parent="." index="3" instance=ExtResource( 1 )]
+
+transform = Transform( 0.992953, -0.0580641, 0.0650873, 0.0833135, 0.961987, -0.163849, -0.0842848, 0.266852, 0.604828, 2.97887, -2.24622, -11.819 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part55" type="Spatial" parent="." index="4" instance=ExtResource( 1 )]
+
+transform = Transform( 0.992992, -0.0575248, 0.0578138, 0.0716552, 0.987718, -0.0777562, -0.0939835, 0.145275, 0.551554, 2.65657, -1.47443, -14.8298 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part57" type="Spatial" parent="." index="5" instance=ExtResource( 1 )]
+
+transform = Transform( 0.992992, -0.0575248, 0.0619433, 0.0534018, 0.997678, 0.0253606, -0.105431, -0.0364583, 0.596255, 2.3438, -1.12054, -17.5793 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="cabel-part60" type="Spatial" parent="." index="6" instance=ExtResource( 1 )]
+
+transform = Transform( 0.871482, -0.0189961, -0.392048, 0.053365, 0.996989, 0.0450029, 0.487516, -0.0751761, 0.695897, 2.03622, -1.29049, -20.5552 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="cabel-part41" type="Spatial" parent="." index="7" instance=ExtResource( 1 )]
+
+transform = Transform( 0.034074, 0.0091385, 0.992382, 6.21311e-06, 0.999958, -0.00908001, -0.999419, 0.000317783, 0.0338341, -0.697617, -2.77628, -9.42831 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part42" type="Spatial" parent="." index="8" instance=ExtResource( 1 )]
+
+transform = Transform( 0.206965, -0.0248443, 0.978033, 0.00215275, 0.999687, 0.0249387, -0.978347, -0.00305597, 0.206953, -5.64415, -2.77787, -9.59828 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part43" type="Spatial" parent="." index="9" instance=ExtResource( 1 )]
+
+transform = Transform( 0.152452, -0.037196, 0.982673, 0.00473618, 0.999308, 0.0367209, -0.988299, -0.000948821, 0.15176, -10.5131, -2.94184, -10.6279 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="cabel-part44" type="Spatial" parent="." index="10" instance=ExtResource( 1 )]
+
+transform = Transform( -0.0224774, 0.00142566, 0.943761, 0.00541353, 0.999985, -0.00123124, -0.999733, 0.00538284, -0.0212257, -15.4176, -3.16613, -11.3822 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part45" type="Spatial" parent="." index="11" instance=ExtResource( 1 )]
+
+transform = Transform( -0.0288212, 0.0532827, 0.984189, 0.00669644, 0.998566, -0.0523673, -0.999562, 0.00515343, -0.0287288, -20.1226, -3.20067, -11.276 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part46" type="Spatial" parent="." index="12" instance=ExtResource( 1 )]
+
+transform = Transform( -0.0254581, 0.0601442, 0.980901, 0.0070477, 0.998175, -0.0589633, -0.999651, 0.00550559, -0.0253963, -25.0347, -2.98066, -11.132 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part47" type="Spatial" parent="." index="13" instance=ExtResource( 1 )]
+
+transform = Transform( -0.0384186, 0.104002, 0.993834, 0.00857412, 0.994567, -0.103747, -0.999225, 0.00453545, -0.0391016, -29.9277, -2.72694, -11.0046 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part48" type="Spatial" parent="." index="14" instance=ExtResource( 1 )]
+
+transform = Transform( -0.0465898, 0.00404686, 0.988917, 0.00643635, 0.999972, -0.00371347, -0.998893, 0.00625455, -0.0461484, -34.873, -2.25172, -10.8107 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part49" type="Spatial" parent="." index="15" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0704762, 0.00784209, 0.977533, 0.00748388, 0.999937, -0.00822235, -0.997485, 0.00805635, 0.0690048, -39.7994, -2.2747, -10.5795 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part50" type="Spatial" parent="." index="16" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0810892, -0.00711028, 1.01662, 0.0101492, 0.999929, 0.00643387, -0.996655, 0.00960403, 0.0827787, -44.6705, -2.27245, -10.9213 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part51" type="Spatial" parent="." index="17" instance=ExtResource( 1 )]
+
+transform = Transform( 0.081171, 0.000940276, 0.9967, 0.0101494, 0.999947, -0.0017699, -0.996649, 0.0102596, 0.0811571, -49.7305, -2.34563, -11.333 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part52" type="Spatial" parent="." index="18" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0750336, -0.0229615, 0.996917, 0.014201, 0.999658, 0.0219558, -0.99708, 0.0125098, 0.075334, -54.694, -2.37813, -11.7376 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part53" type="Spatial" parent="." index="19" instance=ExtResource( 1 )]
+
+transform = Transform( 0.0729812, -0.0464374, 0.797001, 0.0115837, 0.998886, 0.0365694, -0.997266, 0.00820418, 0.0587504, -59.6563, -2.52877, -12.1126 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cabel-part59" type="Spatial" parent="." index="20" instance=ExtResource( 1 )]
+
+transform = Transform( -0.278644, -0.0205803, 0.768139, 0.0146486, 0.999562, 0.0205405, -0.960283, 0.0212195, -0.222577, -63.6152, -2.75316, -12.4011 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+
