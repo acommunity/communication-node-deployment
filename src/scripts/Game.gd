@@ -1,16 +1,26 @@
 extends Spatial
 
 
-export(int) var min_stage = 0
+export(int) var min_stage = 1
 
 export(int) var max_stage = 9
 
 
-var _stage = 0
+var _stage = 1
+
+
+const PLAYERS = [
+	"Objects/CentralCommunication/AnimationPlayer",
+#	"Objects/PowerSupplier/AnimationPlayer",
+	"Objects/Moss/AnimationPlayer",
+	"Objects/R409/AnimationPlayer",
+	"Interface/AnimationPlayer",
+	"Cabels/AnimationPlayer"
+]
 
 
 func _ready():
-	set_stage(0)
+	set_stage(1)
 
 
 func _unhandled_key_input(event):
@@ -25,6 +35,12 @@ func _unhandled_key_input(event):
 	if Input.is_action_pressed("stage_forward"):
 		if _stage < max_stage:
 			set_stage(_stage + 1)
+
+	if Input.is_action_pressed("normal_mode"):
+		get_node("Player").mode = 0
+
+	if Input.is_action_pressed("flight_mode"):
+		get_node("Player").mode = 1
 
 
 func _on_Player_eyes_enter(object):
@@ -46,8 +62,6 @@ func _on_Player_eyes_action(object):
 
 
 func set_stage(value):
-	get_node("Interface/StageTitle/Stage").text = String(value + 1)
-
 	if _stage_is_playing():
 		return
 
@@ -59,11 +73,8 @@ func set_stage(value):
 
 
 func _stage_is_playing():
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
-
-		var player = child.get_node("AnimationPlayer")
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.is_playing():
 			return true
@@ -72,31 +83,24 @@ func _stage_is_playing():
 
 
 func _set_next_stage():
-	_stage += 1
+	var str_stage = String(_stage)
 
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
-
-		var player = child.get_node("AnimationPlayer")
-
-		var str_stage = String(_stage)
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.has_animation(str_stage):
 			player.play(str_stage)
 
+	_stage += 1
 
 
 func _set_prev_stage():
-	for child in get_node("Cars").get_children():
-		if !child.has_node("AnimationPlayer"):
-			continue
+	_stage -= 1
 
-		var player = child.get_node("AnimationPlayer")
+	var str_stage = String(_stage)
 
-		var str_stage = String(_stage)
+	for player_path in PLAYERS:
+		var player = get_node(player_path)
 
 		if player.has_animation(str_stage):
 			player.play_backwards(str_stage)
-
-	_stage -= 1

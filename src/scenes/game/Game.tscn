@@ -1,23 +1,313 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/game/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/cars/CentralCommunication.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/cars/PowerSupplier.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/cars/Moss.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/game/Terrain.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/cars/R409.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/terrain/Terrain.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/cabels/409-423.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/cabels/423-409direction.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/cabels/moss-power.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/cabels/power-423-krhs4x6.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/cabels/power-423-p274m.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/cabels/power-transformator.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/cabels/409-ground.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/cabels/moss-ground.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/cabels/power-ground.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/cabels/423-ground.tscn" type="PackedScene" id=17]
+[ext_resource path="res://media/sounds/in-game.wav" type="AudioStream" id=18]
+[ext_resource path="res://scenes/terrain/resources/skybox/morning.hdr" type="Texture" id=19]
+[ext_resource path="res://scenes/game/Interface.tscn" type="PackedScene" id=20]
 
-[node name="Scene" type="Spatial"]
+[sub_resource type="Animation" id=8]
+
+resource_name = "1"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 272.286, 9.1227, 167.04 ), Vector3( 272.286, 9.1227, 167.04 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+
+resource_name = "15"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 254.184, 8.71332, 271.224 ), Vector3( 254.184, 8.71332, 271.224 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "21"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("power-ground:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("423-ground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("moss-ground:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("power-transformator:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "23"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("power-423-krhs4x6:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("moss-power:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "24"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("power-423-p274m:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=4]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("423-409direction2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("409-423:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=5]
+
+resource_name = "8"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("409-ground:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="PanoramaSky" id=6]
+
+radiance_size = 4
+panorama = ExtResource( 19 )
+
+[sub_resource type="Environment" id=7]
+
+background_mode = 2
+background_sky = SubResource( 6 )
+background_sky_custom_fov = 0.0
+background_color = Color( 0, 0, 0, 1 )
+background_energy = 1.0
+background_canvas_max_layer = 0
+ambient_light_color = Color( 0, 0, 0, 1 )
+ambient_light_energy = 1.0
+ambient_light_sky_contribution = 1.0
+fog_enabled = false
+fog_color = Color( 0.5, 0.6, 0.7, 1 )
+fog_sun_color = Color( 1, 0.9, 0.7, 1 )
+fog_sun_amount = 0.0
+fog_depth_enabled = true
+fog_depth_begin = 10.0
+fog_depth_curve = 1.0
+fog_transmit_enabled = false
+fog_transmit_curve = 1.0
+fog_height_enabled = false
+fog_height_min = 0.0
+fog_height_max = 100.0
+fog_height_curve = 1.0
+tonemap_mode = 0
+tonemap_exposure = 1.0
+tonemap_white = 1.0
+auto_exposure_enabled = false
+auto_exposure_scale = 0.4
+auto_exposure_min_luma = 0.05
+auto_exposure_max_luma = 8.0
+auto_exposure_speed = 0.5
+ss_reflections_enabled = false
+ss_reflections_max_steps = 64
+ss_reflections_fade_in = 0.15
+ss_reflections_fade_out = 2.0
+ss_reflections_depth_tolerance = 0.2
+ss_reflections_roughness = true
+ssao_enabled = false
+ssao_radius = 1.0
+ssao_intensity = 1.0
+ssao_radius2 = 0.0
+ssao_intensity2 = 1.0
+ssao_bias = 0.01
+ssao_light_affect = 0.0
+ssao_color = Color( 0, 0, 0, 1 )
+ssao_quality = 0
+ssao_blur = 3
+ssao_edge_sharpness = 4.0
+dof_blur_far_enabled = false
+dof_blur_far_distance = 10.0
+dof_blur_far_transition = 5.0
+dof_blur_far_amount = 0.1
+dof_blur_far_quality = 1
+dof_blur_near_enabled = false
+dof_blur_near_distance = 2.0
+dof_blur_near_transition = 1.0
+dof_blur_near_amount = 0.1
+dof_blur_near_quality = 1
+glow_enabled = false
+glow_levels/1 = false
+glow_levels/2 = false
+glow_levels/3 = true
+glow_levels/4 = false
+glow_levels/5 = true
+glow_levels/6 = false
+glow_levels/7 = false
+glow_intensity = 0.8
+glow_strength = 1.0
+glow_bloom = 0.0
+glow_blend_mode = 2
+glow_hdr_threshold = 1.0
+glow_hdr_scale = 2.0
+glow_bicubic_upscale = false
+adjustment_enabled = false
+adjustment_brightness = 1.0
+adjustment_contrast = 1.0
+adjustment_saturation = 1.0
+_sections_unfolded = [ "Background" ]
+
+[node name="Scene" type="Spatial" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
-min_stage = 0
-max_stage = 9
+min_stage = 1
+max_stage = 34
 
 [node name="DirectionalLight" type="DirectionalLight" parent="." index="0"]
 
-transform = Transform( -1, -5.01437e-008, 7.16125e-008, 0, 0.819152, 0.573577, -8.74228e-008, 0.573577, -0.819152, 0, 38, -50 )
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573577, 0, -0.573577, 0.819152, 259.586, 49.4419, 248.098 )
 layers = 1
 light_color = Color( 1, 1, 1, 1 )
 light_energy = 1.0
@@ -41,30 +331,134 @@ directional_shadow_normal_bias = 0.8
 directional_shadow_bias_split_scale = 0.25
 directional_shadow_depth_range = 0
 directional_shadow_max_distance = 200.0
+_sections_unfolded = [ "Transform" ]
 
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01208, 0.0738419 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 254.184, 8.71332, 271.224 )
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Cars" type="Node" parent="." index="2"]
+[node name="Objects" type="Node" parent="." index="2"]
 
-[node name="CentralCommunication" parent="Cars" index="0" instance=ExtResource( 3 )]
+editor/display_folded = true
 
-transform = Transform( 0.986372, 0, -0.164528, 0, 1, 0, 0.164528, 0, 0.986372, 3.08198, 2.04203, -0.818488 )
+[node name="CentralCommunication" parent="Objects" index="0" instance=ExtResource( 3 )]
 
-[node name="PowerSupplier" parent="Cars" index="1" instance=ExtResource( 4 )]
+transform = Transform( 0.858806, 0.0125253, -0.512147, -0.000206474, 0.999709, 0.024103, 0.5123, -0.0205941, 0.858559, 261.774, 8.14084, 271.158 )
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0194, 1.53999, 0 )
+[node name="PowerSupplier" parent="Objects" index="1" instance=ExtResource( 4 )]
+
+transform = Transform( 0.374538, 0.0220746, -0.926948, -0.0433036, 0.999042, 0.00629436, 0.9262, 0.0377827, 0.375136, 244.482, 4.6492, 224.513 )
 _sections_unfolded = [ "Collision", "Motion", "Transform" ]
 
-[node name="Moss" parent="Cars" index="2" instance=ExtResource( 5 )]
+[node name="Moss" parent="Objects" index="2" instance=ExtResource( 5 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05677, 1.89932, -0.806662 )
+transform = Transform( -0.88006, -0.0125824, 0.474697, -0.00395561, 0.999808, 0.0191677, -0.474848, 0.014991, -0.879941, 238.915, 4.84863, 184.809 )
 
-[node name="Terrain" parent="." index="3" instance=ExtResource( 6 )]
+[node name="R409" parent="Objects" index="3" instance=ExtResource( 6 )]
 
-[node name="Interface" parent="." index="4" instance=ExtResource( 7 )]
+transform = Transform( 0.284887, 0, 0.958561, -0.0080628, 0.999965, 0.00239629, -0.958527, -0.00841136, 0.284877, 271.171, 7.855, 162.98 )
+
+[node name="Terrain" parent="." index="3" instance=ExtResource( 7 )]
+
+editor/display_folded = true
+
+[node name="Cabels" type="Spatial" parent="." index="4"]
+
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 237.045, 4.00212, 261.196 )
+
+[node name="409-423" parent="Cabels" index="0" instance=ExtResource( 8 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="423-409direction2" parent="Cabels" index="1" instance=ExtResource( 9 )]
+
+visible = false
+
+[node name="moss-power" parent="Cabels" index="2" instance=ExtResource( 10 )]
+
+visible = false
+
+[node name="power-423-krhs4x6" parent="Cabels" index="3" instance=ExtResource( 11 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23962, 1.1784, -16.304 )
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="power-423-p274m" parent="Cabels" index="4" instance=ExtResource( 12 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="power-transformator" parent="Cabels" index="5" instance=ExtResource( 13 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="409-ground" parent="Cabels" index="6" instance=ExtResource( 14 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="moss-ground" parent="Cabels" index="7" instance=ExtResource( 15 )]
+
+visible = false
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="power-ground" parent="Cabels" index="8" instance=ExtResource( 16 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="423-ground" parent="Cabels" index="9" instance=ExtResource( 17 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cabels" index="10"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/1 = SubResource( 8 )
+anims/15 = SubResource( 9 )
+anims/21 = SubResource( 1 )
+anims/23 = SubResource( 2 )
+anims/24 = SubResource( 3 )
+anims/25 = SubResource( 4 )
+anims/8 = SubResource( 5 )
+blend_times = [  ]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="5"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 208.438, 10.1663, 179.708 )
+stream = ExtResource( 18 )
+attenuation_model = 0
+unit_db = 0.0
+unit_size = 1.0
+max_db = 3.0
+pitch_scale = 1.0
+autoplay = true
+max_distance = 0.0
+out_of_range_mode = 0
+bus = "Master"
+area_mask = 1
+emission_angle_enabled = false
+emission_angle_degrees = 45.0
+emission_angle_filter_attenuation_db = -12.0
+attenuation_filter_cutoff_hz = 5000.0
+attenuation_filter_db = -24.0
+doppler_tracking = 0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="6"]
+
+environment = SubResource( 7 )
+
+[node name="Interface" parent="." index="7" instance=ExtResource( 20 )]
 
 [connection signal="eyes_action" from="Player" to="." method="_on_Player_eyes_action"]
 

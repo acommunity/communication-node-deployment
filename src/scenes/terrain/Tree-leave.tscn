@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/trees/leaves-tree-1.tscn" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 0.15, 1.4, 0.349056 )
+
+[node name="Scene Root" type="StaticBody" index="0"]
+
+transform = Transform( 0.453739, 0, -2.96549, 0, 3, 0, 2.96549, 0, 0.453739, 0, 0, 0 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="0"]
+
+transform = Transform( 0.94591, 0, 0.0519307, 0, 0.974729, 0, 0.051931, 0, 0.614453, -0.0599591, 1.42369, 0.00656278 )
+shape = SubResource( 1 )
+disabled = false
+
+[node name="Scene Root" parent="." index="1" instance=ExtResource( 1 )]
+
+transform = Transform( 2, 0, -5.96046e-08, 0, 2, 0, 5.96046e-08, 0, 2, 0, 0.0419142, 0 )
+_sections_unfolded = [ "Transform" ]
+
+

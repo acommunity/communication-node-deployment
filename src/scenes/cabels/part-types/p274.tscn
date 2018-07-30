@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://media/materials/wheel_tire.material" type="Material" id=1]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 0.5, 0.5, 2.5789 )
+
+[sub_resource type="CubeMesh" id=2]
+
+material = ExtResource( 1 )
+custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
+size = Vector3( 0.05, 0.05, 5 )
+subdivide_width = 0
+subdivide_height = 0
+subdivide_depth = 0
+
+[node name="cabel-part39" type="Spatial" index="0"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody" type="StaticBody" parent="." index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00818872, 0, -2.50994 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 2
+collision_mask = 2
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="cabel-part" type="MeshInstance" parent="StaticBody/CollisionShape" index="0"]
+
+transform = Transform( 1.00001, 5.21608e-005, 0.000202581, -5.39371e-005, 0.999966, 0.00827403, -0.00020215, -0.0082743, 0.999967, 0.0178528, 0.0344834, 0.0313971 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 2 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="Hint" type="Label" parent="StaticBody" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 19.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "P-274м"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

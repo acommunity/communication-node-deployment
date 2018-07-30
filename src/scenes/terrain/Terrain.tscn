@@ -1,0 +1,237 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
+[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_heightmap_node.svg" type="Texture" id=2]
+[ext_resource path="res://addons/zylann.hterrain/hterrain_data.gd" type="Script" id=3]
+[ext_resource path="res://scenes/terrain/resources/textures/grass_albedo.png" type="Texture" id=4]
+[ext_resource path="res://scenes/terrain/resources/textures/grass_normal.png" type="Texture" id=5]
+[ext_resource path="res://scenes/terrain/resources/textures/grass_lawn.jpg" type="Texture" id=6]
+[ext_resource path="res://scenes/terrain/resources/textures/field.jpg" type="Texture" id=7]
+[ext_resource path="res://scenes/terrain/resources/textures/TexturesCom_RoadsDirt0068_1_seamless_S.jpg" type="Texture" id=8]
+[ext_resource path="res://scenes/terrain/resources/textures/grass/grass.png" type="Texture" id=9]
+[ext_resource path="res://scenes/terrain/resources/textures/grass/grass_thick.png" type="Texture" id=10]
+[ext_resource path="res://scenes/terrain/resources/textures/grass/flower_yellow.png" type="Texture" id=11]
+[ext_resource path="res://scenes/terrain/resources/textures/grass/flower_chamomile.png" type="Texture" id=12]
+[ext_resource path="res://scenes/terrain/resources/textures/grass/wheat.png" type="Texture" id=13]
+[ext_resource path="res://scenes/terrain/Forest.tscn" type="PackedScene" id=14]
+
+[sub_resource type="Resource" id=1]
+
+script = ExtResource( 3 )
+_sections_unfolded = [ "Resource" ]
+_maps_data = [ [ {
+"id": 0
+} ], [ {
+"id": 0
+} ], [ {
+"id": 0
+} ], [ {
+"id": 0
+} ], [ {
+"id": 0
+}, {
+"id": 1
+}, {
+"id": 2
+}, {
+"id": 3
+}, {
+"id": 4
+} ] ]
+
+[sub_resource type="BoxShape" id=2]
+
+extents = Vector3( 0.2, 10, 20 )
+
+[node name="Terrain" type="Spatial"]
+
+[node name="HTerrain" type="Spatial" parent="." index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_editor_icon": ExtResource( 2 )
+}
+depth_blending = true
+cliff_triplanar = false
+ground_texture_scale = 20.0
+collision_enabled = true
+async_loading = false
+ambient_wind = 0.0
+lod_scale = 2.0
+map_scale = Vector3( 1, 1, 1 )
+data = SubResource( 1 )
+chunk_size = 16
+ground/albedo_bump_0 = ExtResource( 4 )
+ground/normal_roughness_0 = ExtResource( 5 )
+ground/albedo_bump_1 = ExtResource( 6 )
+ground/normal_roughness_1 = null
+ground/albedo_bump_2 = ExtResource( 7 )
+ground/normal_roughness_2 = null
+ground/albedo_bump_3 = ExtResource( 8 )
+ground/normal_roughness_3 = null
+_detail_objects_data = [ {
+"texture": ExtResource( 9 )
+}, {
+"texture": ExtResource( 10 )
+}, {
+"texture": ExtResource( 11 )
+}, {
+"texture": ExtResource( 12 )
+}, {
+"texture": ExtResource( 13 )
+} ]
+
+[node name="Forest" parent="." index="1" instance=ExtResource( 14 )]
+
+editor/display_folded = false
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 248.906, -1.23746, 270.602 )
+
+[node name="chr_tree5" parent="Forest" index="0"]
+
+transform = Transform( 0.397883, 0, 1.87798, 0, 1.91966, 0, -1.87798, 0, 0.397883, -23.5153, 1.83769, 52.9722 )
+
+[node name="chr_tree39" parent="Forest" index="29"]
+
+transform = Transform( 0.337007, 0, 2.62633, 0, 2.64786, 0, -2.62633, 0, 0.337007, -20.0965, 0.807316, -21.2498 )
+
+[node name="chr_tree46" parent="Forest" index="36"]
+
+transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, 1.33305, 4.24655, -22.3785 )
+
+[node name="chr_tree47" parent="Forest" index="37"]
+
+transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -8.04298, 3.8908, -15.5092 )
+
+[node name="chr_tree48" parent="Forest" index="38"]
+
+transform = Transform( 1.23318, 0, 1.45373, 0, 1.90632, 0, -1.45373, 0, 1.23318, -5.24162, 2.75888, -21.4592 )
+
+[node name="chr_tree162" parent="Forest" index="71"]
+
+transform = Transform( 0.587071, 0.08362, 1.43879, -0.031591, 1.55395, -0.0774229, -1.44087, 0, 0.58792, -8.37077, -5.34827, -174.8 )
+
+[node name="chr_tree163" parent="Forest" index="72"]
+
+transform = Transform( 0.587644, 0.0476895, 1.44019, -0.0180167, 1.55547, -0.0441553, -1.44087, 0, 0.58792, -4.90395, -1.47455, -165.018 )
+
+[node name="chr_tree164" parent="Forest" index="73"]
+
+transform = Transform( 0.587672, -0.0451624, 1.44026, 0.017062, 1.55554, 0.0418154, -1.44087, 0, 0.58792, 4.43919, 0.628808, -159.988 )
+
+[node name="chr_tree86" parent="Forest" index="85"]
+
+transform = Transform( 1.23318, 0, 1.45373, -0.00616257, 1.9063, 0.00522763, -1.45372, -0.00808117, 1.23317, 10.1816, 3.87898, -143.548 )
+
+[node name="Scene Root25" parent="Forest/Scene Root4" index="12"]
+
+transform = Transform( -0.396006, 0.16562, -0.903188, 0.130846, 0.983739, 0.123021, 0.908874, -0.0694604, -0.411236, -16.4188, -0.0922226, -2.54727 )
+
+[node name="Scene Root17" parent="Forest/Scene Root4" index="21"]
+
+transform = Transform( 0.980343, 0.105203, -0.166898, -0.110268, 0.993672, -0.0213539, 0.163594, 0.0393379, 0.985741, -27.292, 1.84272, 6.8562 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="2"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 303.547, 10, 167.62 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
+
+transform = Transform( 0.609864, 0, -0.792506, 0, 1, 0, 0.792506, 0, 0.609864, 287.752, 10, 199.608 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody" index="2"]
+
+transform = Transform( 0.980008, 0, 0.198959, 0, 1, 0, -0.198959, 0, 0.980008, 276.03, 10, 231.169 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody" index="3"]
+
+transform = Transform( 0.999102, 0, -0.0423648, 0, 1, 0, 0.0423648, 0, 0.999102, 279.088, 10, 270.622 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape5" type="CollisionShape" parent="StaticBody" index="4"]
+
+transform = Transform( 0.936958, 0, -0.349443, 0, 1, 0, 0.349443, 0, 0.936958, 271.313, 10, 308.955 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape6" type="CollisionShape" parent="StaticBody" index="5"]
+
+transform = Transform( 0.115206, 0, -0.993342, 0, 1, 0, 0.993342, 0, 0.115206, 244.702, 10, 330.053 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape7" type="CollisionShape" parent="StaticBody" index="6"]
+
+transform = Transform( -0.96032, 0, -0.278901, 0, 1, 0, 0.278901, 0, -0.96032, 219.491, 10, 313.298 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape8" type="CollisionShape" parent="StaticBody" index="7"]
+
+transform = Transform( -0.999994, 0, 0.00355771, 0, 1, 0, -0.00355771, 0, -0.999994, 214.003, 10, 274.3 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape9" type="CollisionShape" parent="StaticBody" index="8"]
+
+transform = Transform( -0.975671, 0, -0.219242, 0, 1, 0, 0.219242, 0, -0.975671, 209.827, 10, 235.111 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape10" type="CollisionShape" parent="StaticBody" index="9"]
+
+transform = Transform( -0.988567, 0, 0.150785, 0, 1, 0, -0.150785, 0, -0.988567, 208.352, 10, 196.22 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape11" type="CollisionShape" parent="StaticBody" index="10"]
+
+transform = Transform( -0.852885, 0, 0.522099, 0, 1, 0, -0.522099, 0, -0.852885, 221.328, 10, 160.606 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape12" type="CollisionShape" parent="StaticBody" index="11"]
+
+transform = Transform( -0.348114, 0, 0.937452, 0, 1, 0, -0.937452, 0, -0.348114, 249.301, 10, 137.426 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape13" type="CollisionShape" parent="StaticBody" index="12"]
+
+transform = Transform( 0.440705, 0, 0.897652, 0, 1, 0, -0.897652, 0, 0.440705, 285.759, 10, 139.122 )
+shape = SubResource( 2 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+
+[editable path="Forest"]

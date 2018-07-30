@@ -1,4 +1,4 @@
-extends RigidBody
+extends KinematicBody
 
 
 signal eyes_enter(object)
@@ -6,13 +6,23 @@ signal eyes_leave(object)
 signal eyes_action(object)
 
 
+enum Mode { NORMAL = 0, FLIGTH = 1 }
+
+
 # Player camera position
 var _camera = Vector2()
 
 var _camera_collider = null
 
+var _velocity = Vector3()
+
+export(Mode) var mode = NORMAL
+
 
 func _ready():
+	if mode == null:
+		mode = NORMAL
+
 	_camera.x = rad2deg(get_node("Head").get_rotation().y)
 	_camera.y = rad2deg(get_node("Head/Eyes").get_rotation().x)
 
@@ -23,47 +33,21 @@ func _physics_process(delta):
 	var direction = Vector3()
 
 	if Input.is_action_pressed("move_forward"):
-		direction -= aim.x
-
-	if Input.is_action_pressed("move_backward"):
-		direction += aim.x
-
-	if Input.is_action_pressed("move_left"):
-		direction += aim.z
-
-	if Input.is_action_pressed("move_right"):
 		direction -= aim.z
 
-	direction.y = 0
-	direction = direction.normalized()
+	if Input.is_action_pressed("move_backward"):
+		direction += aim.z
 
-	var speed = 2
+	if Input.is_action_pressed("move_left"):
+		direction -= aim.x
 
-	if Input.is_action_pressed("move_faster"):
-		speed = 4
+	if Input.is_action_pressed("move_right"):
+		direction += aim.x
 
-	get_node("Feet").axis_lock_angular_x = direction.x == 0
-	get_node("Feet").axis_lock_angular_z = direction.z == 0
-
-	get_node("Feet").set_angular_velocity(direction * speed * PI)
-
-	if get_node("RayCast").is_colliding():
-		get_node("Feet").axis_lock_linear_x = direction.x == 0
-		get_node("Feet").axis_lock_linear_z = direction.z == 0
-
-		if Input.is_action_just_pressed("jump"):
-			var feet = get_node("Feet")
-
-			apply_impulse(translation, Vector3(0, 6, 0) * mass)
-
-			get_node("Jump").play()
-
-		if direction.length() > 0:
-			_start_moving_sound(speed)
-		else:
-			_stop_moving_sound()
-	else:
-		_stop_moving_sound()
+	if mode == NORMAL:
+		_process_normal_mode(direction, delta)
+	elif mode == FLIGTH:
+		_process_flight_mode(direction, delta)
 
 	if get_node("Head/Eyes/RayCast").is_colliding():
 		var collider = get_node("Head/Eyes/RayCast").get_collider()
@@ -81,6 +65,61 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("action"):
 		if _camera_collider != null:
 			emit_signal("eyes_action", _camera_collider)
+
+
+func _process_normal_mode(direction, delta):
+	direction.y = 0
+
+	direction = direction.normalized()
+
+	var speed = 3
+
+	if Input.is_action_pressed("move_faster"):
+		speed = 5
+
+	var velocity_y = _velocity.y - delta * 9.8
+
+	_velocity.y = 0
+
+	var acceleration = 1
+
+	if is_on_floor():
+		acceleration = 10
+
+		if direction.length() == 0 || direction.dot(_velocity) < 0:
+			acceleration = 25
+
+		if Input.is_action_just_pressed("jump"):
+			velocity_y = 4
+			
+			# Change audio file
+			# get_node("Jump").play()
+
+		if direction.length() > 0:
+			_start_moving_sound(speed)
+		else:
+			_stop_moving_sound()
+	else:
+		_stop_moving_sound()
+
+	_velocity = _velocity.linear_interpolate(direction * speed, delta * acceleration)
+
+	_velocity.y = velocity_y
+
+	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
+
+
+func _process_flight_mode(direction, delta):
+	_stop_moving_sound()
+
+	var speed = 4
+
+	if Input.is_action_pressed("move_faster"):
+		speed = 7
+
+	_velocity = _velocity.linear_interpolate(direction * speed, delta * 15)
+
+	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
 
 
 func _unhandled_input(event):
