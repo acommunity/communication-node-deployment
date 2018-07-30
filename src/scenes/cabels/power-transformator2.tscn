@@ -160,7 +160,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="cabel-part81" type="Spatial" parent="." index="30" instance=ExtResource( 2 )]
 
-transform = Transform( 0.684536, -0.019809, 0.182177, 0.0177841, 0.999787, 0.00261795, -0.728762, 0.00579112, 0.171186, 31.4006, 3.4673, -83.5081 )
+transform = Transform( 0.685124, 0.0132501, 0.182076, 0.0177743, 0.999233, -0.00872487, -0.728209, 0.0368556, 0.171091, 31.4006, 3.4673, -83.5081 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="cabel-part66" type="Spatial" parent="." index="31" instance=ExtResource( 2 )]
