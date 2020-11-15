@@ -4,7 +4,7 @@ extends RigidBody
 enum State { CLOSED, OPENED }
 
 
-export(State) var state = CLOSED setget set_state
+export(State) var state = State.CLOSED setget set_state
 
 
 func _physics_process(delta):
@@ -14,17 +14,17 @@ func _physics_process(delta):
 
 func _player_eyes_action():
 	if !$AnimationPlayer.is_playing():
-		if state == OPENED:
-			set_state(CLOSED)
+		if state == State.OPENED:
+			set_state(State.CLOSED)
 		else:
-			set_state(OPENED)
+			set_state(State.OPENED)
 
 
 func set_state(value):
 	if !has_node("AnimationPlayer") || value == state:
 		return
 
-	if value == OPENED:
+	if value == State.OPENED:
 		$AnimationPlayer.play("open")
 	else:
 		$AnimationPlayer.play("close")

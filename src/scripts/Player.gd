@@ -16,12 +16,12 @@ var _camera_collider = null
 
 var _velocity = Vector3()
 
-export(Mode) var mode = NORMAL
+export(Mode) var mode = Mode.NORMAL
 
 
 func _ready():
 	if mode == null:
-		mode = NORMAL
+		mode = Mode.NORMAL
 
 	_camera.x = rad2deg(get_node("Head").get_rotation().y)
 	_camera.y = rad2deg(get_node("Head/Eyes").get_rotation().x)
@@ -44,9 +44,9 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_right"):
 		direction += aim.x
 
-	if mode == NORMAL:
+	if mode == Mode.NORMAL:
 		_process_normal_mode(direction, delta)
-	elif mode == FLIGTH:
+	elif mode == Mode.FLIGTH:
 		_process_flight_mode(direction, delta)
 
 	if get_node("Head/Eyes/RayCast").is_colliding():
@@ -122,7 +122,7 @@ func _process_flight_mode(direction, delta):
 	_velocity = move_and_slide(_velocity, Vector3(0, 1, 0))
 
 
-func _unhandled_input(event):
+func _input(event):
 	if event is InputEventMouseMotion:
 		_camera -= event.relative * 0.2
 		_camera.x = fmod(_camera.x, 360)
